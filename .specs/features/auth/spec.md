@@ -172,7 +172,7 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| AUTH-01 | P1: Cadastro | Design | Pending |
+| AUTH-01 | P1: Cadastro | Execute | Done (T13) |
 | AUTH-02 | P1: Cadastro | Execute | Done (T6) |
 | AUTH-03 | P1: Cadastro | Execute | Done (T9) |
 | AUTH-04 | P1: Cadastro | Execute | Done (T6) |
@@ -185,13 +185,13 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | AUTH-11 | P1: Cadastro | Design | Pending |
 | AUTH-12 | P1: Cadastro | Design | Pending |
 | AUTH-13 | P1: Cadastro | Design | Pending |
-| AUTH-14 | P1: Login | Design | Pending |
+| AUTH-14 | P1: Login | Execute | Done (T13) |
 | AUTH-15 | P1: Login | Execute | Done (T7) |
 | AUTH-16 | P1: Login | Execute | Done (T9) |
 | AUTH-17 | P1: Login | Design | Pending |
 | AUTH-18 | P1: Login | Design | Pending |
 | AUTH-19 | P1: Sessão | Execute | Done (T6) |
-| AUTH-20 | P1: Sessão | Design | Pending |
+| AUTH-20 | P1: Sessão | Execute | Done (T13) |
 | AUTH-21 | P1: Sessão | Execute | Done (T9) |
 | AUTH-22 | P1: Sessão | Execute | Done (T4) |
 | AUTH-23 | P1: Sessão | Execute | Done (T9) |

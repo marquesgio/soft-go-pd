@@ -389,12 +389,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes (api mockado): cada função chama o método/URL certo, envia exatamente o payload (sem `confirmPassword`) e devolve `res.data`
-- [ ] Gate quick (front) passa; test count: ≥ 3 novos
+- [x] Testes (api mockado): cada função chama o método/URL certo, envia exatamente o payload (sem `confirmPassword`) e devolve `res.data`
+- [x] Gate quick (front) passa; test count: ≥ 3 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add auth api service`
+**Status**: ✅ Done — `soft-go-II@354f535`
 
 ---
 
