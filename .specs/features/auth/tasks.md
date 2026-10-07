@@ -341,12 +341,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: save → get devolve o mesmo; clear → `null` e chave removida; JSON corrompido e forma inválida → `null` + chave removida sem lançar; `onSessionExpired` chama listener e o unsubscribe para de chamar
-- [ ] Gate quick (front) passa; test count: ≥ 5 novos
+- [x] Testes: save → get devolve o mesmo; clear → `null` e chave removida; JSON corrompido e forma inválida → `null` + chave removida sem lançar; `onSessionExpired` chama listener e o unsubscribe para de chamar
+- [x] Gate quick (front) passa; test count: ≥ 5 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add session storage module`
+**Status**: ✅ Done — `soft-go-II@d285483`
 
 ---
 

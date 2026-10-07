@@ -204,7 +204,7 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | AUTH-30 | P1: Logout | Design | Pending |
 | AUTH-31 | P1: Logout | Design | Pending |
 | AUTH-32 | Edge | Design | Pending |
-| AUTH-33 | Edge | Design | Pending |
+| AUTH-33 | Edge | Execute | Done (T11) |
 | AUTH-34 | Edge | Design | Pending |
 
 **Coverage:** 34 total, 0 mapped to tasks, 34 unmapped ⚠️ (mapeamento acontece na fase Tasks)
