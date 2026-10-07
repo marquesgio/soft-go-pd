@@ -21,10 +21,10 @@
 ## Handoff
 
 - **Feature**: auth (`.specs/features/auth/`)
-- **Phase / Task**: Phase 1 concluída (T1–T4); próxima: Phase 2 / T5
-- **Completed**: T1, T2, T3, T4
+- **Phase / Task**: Phase 2 concluída (T5–T9); próxima: Phase 3 / T10
+- **Completed**: T1–T9 (API completa: 44 testes)
 - **In-progress** (file:line): none
-- **Next step**: Iniciar T5 (DTOs `SignUpDto`/`SignInDto` em `soft-go-ii-api/src/auth/dto/`). Execução inline, pausando ao fim de cada fase; commits direto em `master`/`main`.
+- **Next step**: Iniciar T10 (vitest + Testing Library em `soft-go-II`). Execução inline, pausando ao fim de cada fase; commits direto em `master`/`main`.
 - **Blockers**: none (`JWT_SECRET` já definido no `.env` local; schema do banco alinhado às entidades, sem drift)
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária, fora do fluxo)
 - **Branch**: raiz `main`; API `master`; front `main`

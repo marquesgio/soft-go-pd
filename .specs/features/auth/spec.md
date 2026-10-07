@@ -174,12 +174,12 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | -------------- | ----- | ----- | ------ |
 | AUTH-01 | P1: Cadastro | Design | Pending |
 | AUTH-02 | P1: Cadastro | Execute | Done (T6) |
-| AUTH-03 | P1: Cadastro | Design | Pending |
+| AUTH-03 | P1: Cadastro | Execute | Done (T9) |
 | AUTH-04 | P1: Cadastro | Execute | Done (T6) |
 | AUTH-05 | P1: Cadastro | Execute | Done (T6) |
-| AUTH-06 | P1: Cadastro | Design | Pending |
-| AUTH-07 | P1: Cadastro | Design | Pending |
-| AUTH-08 | P1: Cadastro | Design | Pending |
+| AUTH-06 | P1: Cadastro | Execute | Done (T9) |
+| AUTH-07 | P1: Cadastro | Execute | Done (T9) |
+| AUTH-08 | P1: Cadastro | Execute | Done (T9) |
 | AUTH-09 | P1: Cadastro | Execute | Done (T6) |
 | AUTH-10 | P1: Cadastro | Design | Pending |
 | AUTH-11 | P1: Cadastro | Design | Pending |
@@ -187,14 +187,14 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | AUTH-13 | P1: Cadastro | Design | Pending |
 | AUTH-14 | P1: Login | Design | Pending |
 | AUTH-15 | P1: Login | Execute | Done (T7) |
-| AUTH-16 | P1: Login | Design | Pending |
+| AUTH-16 | P1: Login | Execute | Done (T9) |
 | AUTH-17 | P1: Login | Design | Pending |
 | AUTH-18 | P1: Login | Design | Pending |
 | AUTH-19 | P1: Sessão | Execute | Done (T6) |
 | AUTH-20 | P1: Sessão | Design | Pending |
-| AUTH-21 | P1: Sessão | Design | Pending |
+| AUTH-21 | P1: Sessão | Execute | Done (T9) |
 | AUTH-22 | P1: Sessão | Execute | Done (T4) |
-| AUTH-23 | P1: Sessão | Design | Pending |
+| AUTH-23 | P1: Sessão | Execute | Done (T9) |
 | AUTH-24 | P1: Sessão | Design | Pending |
 | AUTH-25 | P1: Sessão | Design | Pending |
 | AUTH-26 | P1: Sessão | Design | Pending |

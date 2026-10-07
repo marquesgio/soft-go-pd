@@ -293,13 +293,14 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: `novo-recurso` (API)
 
 **Done when**:
-- [ ] Teste HTTP (supertest + `setupApp` + `UsersRepository` fake em memória): signup 201 sem `password`/`passwordHash`/`password_hash` em nenhum nível do corpo; signup duplicado (e-mail em maiúsculas) 409; senha 7 e 73 chars → 400; e-mail inválido → 400; nome 1 char/só espaços → 400; campo extra `confirmPassword` → 400; signin 200; signin errado → 401 com corpo idêntico para e-mail inexistente e senha errada; `/auth/me` com token → 200 `{id,name,email}`, sem token → 401
-- [ ] Teste: `RideController`, `RideUsersController`, `TransportTypeController` não têm metadata de guards (AUTH-23)
-- [ ] Gate build (API) passa; test count total da API registrado
+- [x] Teste HTTP (supertest + `setupApp` + `UsersRepository` fake em memória): signup 201 sem `password`/`passwordHash`/`password_hash` em nenhum nível do corpo; signup duplicado (e-mail em maiúsculas) 409; senha 7 e 73 chars → 400; e-mail inválido → 400; nome 1 char/só espaços → 400; campo extra `confirmPassword` → 400; signin 200; signin errado → 401 com corpo idêntico para e-mail inexistente e senha errada; `/auth/me` com token → 200 `{id,name,email}`, sem token → 401
+- [x] Teste: `RideController`, `RideUsersController`, `TransportTypeController` não têm metadata de guards (AUTH-23)
+- [x] Gate build (API) passa; test count total da API registrado
 
 **Tests**: integration
 **Gate**: build
 **Commit**: `feat: add auth endpoints`
+**Status**: ✅ Done — `soft-go-ii-api@0d5194d (API: 44 testes)`
 
 ---
 
