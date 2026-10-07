@@ -167,12 +167,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: sem `JWT_SECRET` → lança com a mensagem; com segredo → retorna secret; sem `JWT_EXPIRES_IN` → `'7d'`; com valor → usa o valor
-- [ ] Gate quick (API) passa; test count: 4 novos
+- [x] Testes: sem `JWT_SECRET` → lança com a mensagem; com segredo → retorna secret; sem `JWT_EXPIRES_IN` → `'7d'`; com valor → usa o valor
+- [x] Gate quick (API) passa; test count: 4 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add jwt config factory`
+**Status**: ✅ Done — `soft-go-ii-api@dd70533`
 
 ---
 
