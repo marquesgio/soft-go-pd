@@ -461,12 +461,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: com `error` → texto renderizado e `aria-invalid="true"`; sem `error` → nada extra
-- [ ] Gate quick (front) passa; test count: ≥ 2 novos
+- [x] Testes: com `error` → texto renderizado e `aria-invalid="true"`; sem `error` → nada extra
+- [x] Gate quick (front) passa; test count: ≥ 2 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: show field error in input form`
+**Status**: ✅ Done — `soft-go-II@fe5f088`
 
 ---
 
