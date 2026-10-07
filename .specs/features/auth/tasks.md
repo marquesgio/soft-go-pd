@@ -191,12 +191,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Tipos TS batem com os validators; nenhum campo sem decorator
-- [ ] Gate build (API) passa (comportamento coberto pelo teste HTTP de T9)
+- [x] Tipos TS batem com os validators; nenhum campo sem decorator
+- [x] Gate build (API) passa (comportamento coberto pelo teste HTTP de T9)
 
 **Tests**: none
 **Gate**: build
 **Commit**: `feat: add sign up and sign in dtos`
+**Status**: ✅ Done — `soft-go-ii-api@138f367`
 
 ---
 
