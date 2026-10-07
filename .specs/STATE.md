@@ -18,6 +18,22 @@
 - **Date**: 2026-10-07
 - **Status**: active
 
+### AD-003
+- **Decision**: Rotas públicas que personalizam a resposta para quem está logada usam `OptionalJwtAuthGuard`, aplicado por rota. Token válido preenche `request.user`; ausente ou inválido segue como anônima, sem 401. `POST /ride-users` passa a exigir `JwtAuthGuard`, o que substitui o AUTH-23 nessa rota (`GET /ride`, `POST /ride` e `GET /transport-type` seguem sem exigir token).
+- **Reason**: O mural continua público, e dados pessoais (telefones de participantes) só aparecem para quem está logada. Inscrição precisa de dona para impedir duplicidade (feature vou-junto).
+- **Trade-off**: Um token adulterado não é sinalizado nessas rotas: só o `/auth/me` do front derruba a sessão. É mais uma classe de guard para manter.
+- **Scope**: `soft-go-ii-api` (`RideController` leituras, `RideUsersController.create`, futuras rotas públicas personalizadas).
+- **Date**: 2026-10-07
+- **Status**: active
+
+### AD-004
+- **Decision**: `ride_users` só liga carona e usuária (`ride_id`, `user_id`, `UNIQUE (ride_id, user_id)`). Nome e telefone de participante vêm de `users` (`users.phone` opcional). Inscrições sem conta não existem.
+- **Reason**: Uma fonte só para dados pessoais. Decisão da usuária de apagar as inscrições antigas sem conta.
+- **Trade-off**: Perda irreversível das inscrições antigas. Toda inscrição exige conta. Exibir participante exige join com `users`.
+- **Scope**: `soft-go-ii-api` (`ride_users`, `users`, `RideService`, `RideUsersService`) e `soft-go-II` (tipos `Participant`, `User.phone`).
+- **Date**: 2026-10-07
+- **Status**: active
+
 ## Handoff
 
 - **Feature**: auth (`.specs/features/auth/`) — **concluída**
