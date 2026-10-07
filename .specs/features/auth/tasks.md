@@ -118,13 +118,14 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: `novo-recurso` (API)
 
 **Done when**:
-- [ ] Colunas e tamanhos batem com o SQL do PRD
-- [ ] `User` registrada nos dois arquivos de config
-- [ ] Gate build (API) passa
+- [x] Colunas e tamanhos batem com o SQL do PRD
+- [x] `User` registrada nos dois arquivos de config
+- [x] Gate build (API) passa
 
 **Tests**: none
 **Gate**: build
 **Commit**: `feat: add user entity and repository`
+**Status**: ✅ Done — `soft-go-ii-api@51dda6a`
 
 ---
 
