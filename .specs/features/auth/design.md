@@ -226,7 +226,7 @@ Front: `vitest` (v5, compatível com Vite 8), `jsdom`, `@testing-library/react`,
 | Concern | Location (file:line) | Impact | Mitigation |
 | ------- | -------------------- | ------ | ---------- |
 | Config do `ValidationPipe` só existe inline em `main.ts` | `soft-go-ii-api/src/main.ts:10-16` | Testes HTTP validariam com regras diferentes da produção | Extrair `setupApp()` e usar nos dois lugares |
-| bcrypt usa só os primeiros 72 **bytes**; o limite do spec é 72 **caracteres** | `auth/dto/sign-up.dto.ts` (novo) | Senha com acentos/emoji perto de 72 chars teria a cauda ignorada | Aceito: caso extremo; registrado. ⚠️ Não confirmei se `bcryptjs@3` trunca em silêncio ou lança acima de 72 bytes — verificar na implementação e cobrir com teste |
+| bcrypt usa só os primeiros 72 **bytes**; o limite do spec é 72 **caracteres** | `auth/dto/sign-up.dto.ts` (novo) | Senha com acentos/emoji perto de 72 chars teria a cauda ignorada | Aceito: caso extremo; registrado. Verificado na T6: `bcryptjs@3` trunca em silêncio acima de 72 bytes (não lança); `bcrypt.truncates()` existe se um dia for preciso rejeitar |
 | Senha em texto puro (requisito crítico do PRD) | `auth.service.ts` (novo) | Reprovação da review | `passwordHash` com `select: false`; `toPublicUser` com whitelist; testes AUTH-02/03 inspecionam o objeto salvo e o corpo das respostas |
 | Token em `localStorage` (XSS) e sem revogação | `soft-go-II/src/service/session.ts` (novo) | Token roubado vale até 7 dias | Aceito pela usuária; dívida registrada (cookie httpOnly / revogação quando houver rota sensível) |
 | `Toast` tem mensagens padrão específicas de "corrida" | `soft-go-II/src/components/Toast.tsx:5-8` | Mensagem errada se chamado sem texto | Páginas novas sempre passam mensagem explícita |

@@ -215,16 +215,17 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Teste: retorno `{ accessToken, user: { id, name, email } }` sem chaves de senha
-- [ ] Teste: valor passado a `save` tem `passwordHash !== senha` e `bcrypt.compare(senha, passwordHash) === true`
-- [ ] Teste: e-mail existente → `ConflictException` com "E-mail já cadastrado" e `save` não chamado
-- [ ] Teste: `save` rejeita `QueryFailedError` código `23505` → `ConflictException` (não 500); outro erro é relançado
-- [ ] Teste: `accessToken` decodifica com `sub` = id, `email`, e `exp - iat` = 7 dias
-- [ ] Gate quick (API) passa; test count: ≥ 6 novos
+- [x] Teste: retorno `{ accessToken, user: { id, name, email } }` sem chaves de senha
+- [x] Teste: valor passado a `save` tem `passwordHash !== senha` e `bcrypt.compare(senha, passwordHash) === true`
+- [x] Teste: e-mail existente → `ConflictException` com "E-mail já cadastrado" e `save` não chamado
+- [x] Teste: `save` rejeita `QueryFailedError` código `23505` → `ConflictException` (não 500); outro erro é relançado
+- [x] Teste: `accessToken` decodifica com `sub` = id, `email`, e `exp - iat` = 7 dias
+- [x] Gate quick (API) passa; test count: ≥ 6 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add sign up to auth service`
+**Status**: ✅ Done — `soft-go-ii-api@106dd0f`
 
 ---
 
