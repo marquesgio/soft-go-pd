@@ -93,13 +93,14 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] `main.ts` não instancia mais o `ValidationPipe` diretamente
-- [ ] Comportamento idêntico (mesmas opções)
-- [ ] Gate build (API) passa
+- [x] `main.ts` não instancia mais o `ValidationPipe` diretamente
+- [x] Comportamento idêntico (mesmas opções)
+- [x] Gate build (API) passa
 
 **Tests**: none
 **Gate**: build
 **Commit**: `refactor: extract app setup for reuse in tests`
+**Status**: ✅ Done — `soft-go-ii-api@36abd6f`
 
 ---
 
