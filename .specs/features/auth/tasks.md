@@ -509,12 +509,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: sucesso → navegação `/`; 401 → toast "E-mail ou senha inválidos", sem toast de sessão expirada, continua em `/login`; campos vazios → erros e serviço não chamado
-- [ ] Gate quick (front) passa; test count: ≥ 3 novos
+- [x] Testes: sucesso → navegação `/`; 401 → toast "E-mail ou senha inválidos", sem toast de sessão expirada, continua em `/login`; campos vazios → erros e serviço não chamado
+- [x] Gate quick (front) passa; test count: ≥ 3 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add login page`
+**Status**: ✅ Done — `soft-go-II@0da0278`
 
 ---
 

@@ -188,8 +188,8 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | AUTH-14 | P1: Login | Execute | Done (T13) |
 | AUTH-15 | P1: Login | Execute | Done (T7) |
 | AUTH-16 | P1: Login | Execute | Done (T9) |
-| AUTH-17 | P1: Login | Design | Pending |
-| AUTH-18 | P1: Login | Design | Pending |
+| AUTH-17 | P1: Login | Execute | Done (T18) |
+| AUTH-18 | P1: Login | Execute | Done (T18) |
 | AUTH-19 | P1: Sessão | Execute | Done (T6) |
 | AUTH-20 | P1: Sessão | Execute | Done (T13) |
 | AUTH-21 | P1: Sessão | Execute | Done (T9) |
@@ -205,7 +205,7 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | AUTH-31 | P1: Logout | Design | Pending |
 | AUTH-32 | Edge | Execute | Done (T17) |
 | AUTH-33 | Edge | Execute | Done (T11) |
-| AUTH-34 | Edge | Design | Pending |
+| AUTH-34 | Edge | Execute | Done (T18) |
 
 **Coverage:** 34 total, 0 mapped to tasks, 34 unmapped ⚠️ (mapeamento acontece na fase Tasks)
 
