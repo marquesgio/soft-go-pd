@@ -243,14 +243,15 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Teste: credenciais certas → `{ accessToken, user }` sem senha/hash
-- [ ] Teste: e-mail inexistente e senha errada → `UnauthorizedException` com mensagem e status idênticos
-- [ ] Teste: `me` devolve `{ id, name, email }`; usuário inexistente → `UnauthorizedException`
-- [ ] Gate quick (API) passa; test count: ≥ 5 novos, nenhum removido
+- [x] Teste: credenciais certas → `{ accessToken, user }` sem senha/hash
+- [x] Teste: e-mail inexistente e senha errada → `UnauthorizedException` com mensagem e status idênticos
+- [x] Teste: `me` devolve `{ id, name, email }`; usuário inexistente → `UnauthorizedException`
+- [x] Gate quick (API) passa; test count: ≥ 5 novos, nenhum removido
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add sign in and me to auth service`
+**Status**: ✅ Done — `soft-go-ii-api@ab69eff`
 
 ---
 

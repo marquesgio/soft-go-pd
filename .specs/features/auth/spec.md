@@ -186,7 +186,7 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | AUTH-12 | P1: Cadastro | Design | Pending |
 | AUTH-13 | P1: Cadastro | Design | Pending |
 | AUTH-14 | P1: Login | Design | Pending |
-| AUTH-15 | P1: Login | Design | Pending |
+| AUTH-15 | P1: Login | Execute | Done (T7) |
 | AUTH-16 | P1: Login | Design | Pending |
 | AUTH-17 | P1: Login | Design | Pending |
 | AUTH-18 | P1: Login | Design | Pending |
