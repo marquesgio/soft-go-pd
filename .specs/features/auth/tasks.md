@@ -533,12 +533,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: logada em `/login` e `/cadastro` → renderiza `/`; deslogada → renderiza a página
-- [ ] Gate quick (front) passa; test count: ≥ 3 novos
+- [x] Testes: logada em `/login` e `/cadastro` → renderiza `/`; deslogada → renderiza a página
+- [x] Gate quick (front) passa; test count: ≥ 3 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add login and sign up routes`
+**Status**: ✅ Done — `soft-go-II@a19ef5b`
 
 ---
 
