@@ -142,13 +142,14 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: `migration` (API)
 
 **Done when**:
-- [ ] Checklist de revisão da skill `migration` ok
-- [ ] Contra o Postgres **local** (`localhost`): `migrations:run` → `migrations:revert` → `migrations:run` sem erro (se o banco não estiver acessível, registrar e seguir; validar manualmente depois)
-- [ ] Gate build (API) passa
+- [x] Checklist de revisão da skill `migration` ok
+- [x] Contra o Postgres **local** (`localhost`): `migrations:run` → `migrations:revert` → `migrations:run` sem erro (se o banco não estiver acessível, registrar e seguir; validar manualmente depois)
+- [x] Gate build (API) passa
 
 **Tests**: none
 **Gate**: build
 **Commit**: `feat: add users table migration`
+**Status**: ✅ Done — `soft-go-ii-api@2495e10`
 
 ---
 
