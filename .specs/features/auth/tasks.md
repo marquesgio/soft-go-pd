@@ -318,11 +318,12 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] `npm test` roda e passa (1 teste); `npm run build` e `npm run lint` continuam passando
+- [x] `npm test` roda e passa (1 teste); `npm run build` e `npm run lint` continuam passando
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `chore: add vitest and testing library`
+**Status**: ✅ Done — `soft-go-II@ac41549`
 
 ---
 
