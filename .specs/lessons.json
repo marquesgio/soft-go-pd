@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "promote_threshold": 2,
+  "window_days": 45,
+  "quarantine_threshold": 2,
+  "next_id": 5,
+  "lessons": [
+    {
+      "id": "L-001",
+      "key": "surviving_mutant::para requisitos de rota aberta testar tambem que nenhum app guard global e registrado nao so metadata de guard por controller",
+      "text": "Para requisitos de rota aberta, testar também que nenhum APP_GUARD global é registrado, não só metadata de guard por controller.",
+      "signal": "surviving_mutant",
+      "scope": "api/guards",
+      "status": "candidate",
+      "features": [
+        "auth"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "A11 soft-go-ii-api/src/app.module.ts:24 (api/guards)"
+      ],
+      "created": "2026-10-07T21:31:06Z",
+      "last_seen": "2026-10-07T21:31:06Z"
+    },
+    {
+      "id": "L-002",
+      "key": "surviving_mutant::quando testes usam repositorio fake cobrir opcoes de coluna criticas ex select false lendo getmetadataargsstorage",
+      "text": "Quando testes usam repositório fake, cobrir opções de coluna críticas (ex.: select: false) lendo getMetadataArgsStorage.",
+      "signal": "surviving_mutant",
+      "scope": "api/entities",
+      "status": "candidate",
+      "features": [
+        "auth"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "A1 soft-go-ii-api/src/users/entities/user.entity.ts:26 (api/entities)"
+      ],
+      "created": "2026-10-07T21:31:06Z",
+      "last_seen": "2026-10-07T21:31:06Z"
+    },
+    {
+      "id": "L-003",
+      "key": "surviving_mutant::em paginas de formulario testar a mensagem de erro de cada campo validado nao so de um campo representativo",
+      "text": "Em páginas de formulário, testar a mensagem de erro de cada campo validado, não só de um campo representativo.",
+      "signal": "surviving_mutant",
+      "scope": "front/forms",
+      "status": "candidate",
+      "features": [
+        "auth"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "F10 soft-go-II/src/pages/SignUp.tsx:75 (front/forms)"
+      ],
+      "created": "2026-10-07T21:31:06Z",
+      "last_seen": "2026-10-07T21:31:06Z"
+    },
+    {
+      "id": "L-004",
+      "key": "spec_precision_gap::acs de validacao devem citar a mensagem exata esperada para que testes nao precisem de regex generica",
+      "text": "ACs de validação devem citar a mensagem exata esperada, para que testes não precisem de regex genérica.",
+      "signal": "spec_precision_gap",
+      "scope": "spec",
+      "status": "candidate",
+      "features": [
+        "auth"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "AUTH-07 (spec)"
+      ],
+      "created": "2026-10-07T21:31:06Z",
+      "last_seen": "2026-10-07T21:31:06Z"
+    }
+  ]
+}
