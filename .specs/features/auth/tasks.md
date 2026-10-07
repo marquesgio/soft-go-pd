@@ -365,12 +365,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: com sessão → header `Authorization: Bearer <token>`; sem sessão (inclusive após `clearSession`) → sem header; 401 com sessão → sessão limpa + `notifySessionExpired` chamado + promise rejeitada; 401 sem sessão → nada limpo/notificado + rejeitada; 409/500 → só rejeita
-- [ ] Gate quick (front) passa; test count: ≥ 5 novos
+- [x] Testes: com sessão → header `Authorization: Bearer <token>`; sem sessão (inclusive após `clearSession`) → sem header; 401 com sessão → sessão limpa + `notifySessionExpired` chamado + promise rejeitada; 401 sem sessão → nada limpo/notificado + rejeitada; 409/500 → só rejeita
+- [x] Gate quick (front) passa; test count: ≥ 5 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add auth interceptors to api client`
+**Status**: ✅ Done — `soft-go-II@6ad321c`
 
 ---
 
