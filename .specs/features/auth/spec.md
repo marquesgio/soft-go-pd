@@ -196,8 +196,8 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | AUTH-22 | P1: Sessão | Execute | Done (T4) |
 | AUTH-23 | P1: Sessão | Execute | Done (T9) |
 | AUTH-24 | P1: Sessão | Execute | Done (T12) |
-| AUTH-25 | P1: Sessão | Design | Pending |
-| AUTH-26 | P1: Sessão | Design | Pending |
+| AUTH-25 | P1: Sessão | Execute | Done (T15) |
+| AUTH-26 | P1: Sessão | Execute | Done (T15) |
 | AUTH-27 | P1: Sessão | Design | Pending |
 | AUTH-28 | P1: Sessão | Design | Pending |
 | AUTH-29 | P1: Sessão | Design | Pending |

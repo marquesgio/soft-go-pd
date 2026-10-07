@@ -437,12 +437,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: com sessão salva, `user` disponível no primeiro render e `getMe` chamado; `signIn`/`signUp` salvam sessão e setam `user`; `signOut` limpa storage, `user = null` e navega para `/login`; `notifySessionExpired` → `user = null`, toast e `/login`
-- [ ] Gate quick (front) passa; test count: ≥ 5 novos
+- [x] Testes: com sessão salva, `user` disponível no primeiro render e `getMe` chamado; `signIn`/`signUp` salvam sessão e setam `user`; `signOut` limpa storage, `user = null` e navega para `/login`; `notifySessionExpired` → `user = null`, toast e `/login`
+- [x] Gate quick (front) passa; test count: ≥ 5 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add auth context provider`
+**Status**: ✅ Done — `soft-go-II@25ca652`
 
 ---
 
