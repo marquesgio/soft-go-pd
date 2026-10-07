@@ -169,36 +169,36 @@ O modal "Quero ir junto!" pede nome e telefone a cada inscrição, mesmo agora q
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| JOIN-01 | P1: Confirmar presença logada | Design | Pending |
-| JOIN-02 | P1: Confirmar presença logada | Design | Pending |
-| JOIN-03 | P1: Confirmar presença logada | Design | Pending |
-| JOIN-04 | P1: Confirmar presença logada | Design | Pending |
-| JOIN-05 | P1: Confirmar presença logada | Design | Pending |
-| JOIN-06 | P1: Confirmar presença logada | Design | Pending |
-| JOIN-07 | P1: Só logada confirma | Design | Pending |
-| JOIN-08 | P1: Só logada confirma | Design | Pending |
-| JOIN-09 | P1: Só logada confirma | Design | Pending |
-| JOIN-10 | P1: Sem duplicidade | Design | Pending |
-| JOIN-11 | P1: Sem duplicidade | Design | Pending |
-| JOIN-12 | P1: Sem duplicidade | Design | Pending |
-| JOIN-13 | P1: Telefone na conta | Design | Pending |
-| JOIN-14 | P1: Telefone na conta | Design | Pending |
-| JOIN-15 | P1: Telefone na conta | Design | Pending |
-| JOIN-16 | P1: Telefone na conta | Design | Pending |
-| JOIN-17 | P1: Telefone na conta | Design | Pending |
-| JOIN-18 | P1: Telefone na conta | Design | Pending |
-| JOIN-19 | P1: Telefone na conta | Design | Pending |
-| JOIN-20 | P1: Participantes no card | Design | Pending |
-| JOIN-21 | P1: Participantes no card | Design | Pending |
-| JOIN-22 | P1: Participantes no card | Design | Pending |
-| JOIN-23 | P1: Participantes no card | Design | Pending |
-| JOIN-24 | P1: Participantes no card | Design | Pending |
-| JOIN-25 | P1: Participantes no card | Design | Pending |
-| JOIN-26 | Edge | Design | Pending |
-| JOIN-27 | Edge | Design | Pending |
-| JOIN-28 | Edge | Design | Pending |
+| JOIN-01 | P1: Confirmar presença logada | Tasks | Pending |
+| JOIN-02 | P1: Confirmar presença logada | Tasks | Pending |
+| JOIN-03 | P1: Confirmar presença logada | Tasks | Pending |
+| JOIN-04 | P1: Confirmar presença logada | Tasks | Pending |
+| JOIN-05 | P1: Confirmar presença logada | Tasks | Pending |
+| JOIN-06 | P1: Confirmar presença logada | Tasks | Pending |
+| JOIN-07 | P1: Só logada confirma | Tasks | Pending |
+| JOIN-08 | P1: Só logada confirma | Tasks | Pending |
+| JOIN-09 | P1: Só logada confirma | Tasks | Pending |
+| JOIN-10 | P1: Sem duplicidade | Tasks | Pending |
+| JOIN-11 | P1: Sem duplicidade | Tasks | Pending |
+| JOIN-12 | P1: Sem duplicidade | Tasks | Pending |
+| JOIN-13 | P1: Telefone na conta | Tasks | Pending |
+| JOIN-14 | P1: Telefone na conta | Tasks | Pending |
+| JOIN-15 | P1: Telefone na conta | Tasks | Pending |
+| JOIN-16 | P1: Telefone na conta | Tasks | Pending |
+| JOIN-17 | P1: Telefone na conta | Tasks | Pending |
+| JOIN-18 | P1: Telefone na conta | Tasks | Pending |
+| JOIN-19 | P1: Telefone na conta | Tasks | Pending |
+| JOIN-20 | P1: Participantes no card | Tasks | Pending |
+| JOIN-21 | P1: Participantes no card | Tasks | Pending |
+| JOIN-22 | P1: Participantes no card | Tasks | Pending |
+| JOIN-23 | P1: Participantes no card | Tasks | Pending |
+| JOIN-24 | P1: Participantes no card | Tasks | Pending |
+| JOIN-25 | P1: Participantes no card | Tasks | Pending |
+| JOIN-26 | Edge | Tasks | Pending |
+| JOIN-27 | Edge | Tasks | Pending |
+| JOIN-28 | Edge | Tasks | Pending |
 
-**Coverage:** 28 total, 0 mapped to tasks, 28 unmapped ⚠️ (o mapeamento acontece na fase Tasks)
+**Coverage:** 28 total, 28 mapped to tasks (ver `tasks.md` → Requirement Coverage), 0 unmapped
 
 ---
 

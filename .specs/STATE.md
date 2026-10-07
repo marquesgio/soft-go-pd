@@ -36,12 +36,12 @@
 
 ## Handoff
 
-- **Feature**: auth (`.specs/features/auth/`) — **concluída**
-- **Phase / Task**: Execute concluído (T1–T20); Verifier PASS na iteração 2 (`validation.md`, 34/34 ACs, sensor 15/15)
-- **Completed**: T1–T20 + correções de teste do Verifier (API `06b51b4`, front `f1de23e`). API: 46 testes; front: 63 testes
+- **Feature**: vou-junto (`.specs/features/vou-junto/`). A feature auth está concluída
+- **Phase / Task**: Specify, Design e Tasks aprovados; Execute em andamento (Phase 1 / T1)
+- **Completed**: none
 - **In-progress** (file:line): none
-- **Next step**: Nenhum na feature. Pendente da usuária: `git push --recurse-submodules=on-demand` quando quiser publicar (nada foi enviado ao GitHub). Próxima feature sugerida: proteger `POST /ride`/`POST /ride-users` e pré-preencher nome/telefone com o usuário logado.
+- **Next step**: T1 (`users.phone`). Execução inline, pausando ao fim de cada fase; commits direto em `master`/`main`. Na T2, pedir confirmação antes de rodar a migration no banco local (apaga 35 inscrições).
 - **Blockers**: none
-- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária, fora do fluxo)
+- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Known gap (não bloqueante)**: um `app.useGlobalGuards(...)` direto em `main.ts` não seria detectado por teste (só via `setupApp`/módulos).
+- **Gate notes**: API build gate = `tsc -p tsconfig.build.json` + `tsc -p tsconfig.json` (tolera só `test/app.e2e-spec.ts(4,21) TS2307`) + lint + `npm test`. Front build gate = `npm run lint && npm run build && npm test`.
