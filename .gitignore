@@ -1,0 +1,4 @@
+.claude/settings.local.json
+.agents/*.backup
+.env
+node_modules/

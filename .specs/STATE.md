@@ -1,0 +1,30 @@
+# STATE
+
+## Decisions
+
+### AD-001
+- **Decision**: Autenticação por JWT Bearer emitido com `@nestjs/jwt` (sem Passport) e verificado por `JwtAuthGuard` aplicado por rota (`@UseGuards`), nunca global; no front o token fica em `localStorage` e o logout é só no cliente.
+- **Reason**: Menos dependências e código explícito para um único fluxo e-mail/senha; rotas existentes continuam abertas; usuária aceitou os riscos de XSS/sem revogação nesta fase.
+- **Trade-off**: Sem revogação de token e exposição a XSS; login social/SSO exigirá adotar Passport ou nova estratégia. Revisitar (cookie httpOnly e/ou revogação) quando rotas sensíveis passarem a exigir auth.
+- **Scope**: `soft-go-ii-api` (todas as rotas protegidas futuras) e `soft-go-II` (`service/session.ts`, `service/api.ts`, `AuthProvider`).
+- **Date**: 2026-10-07
+- **Status**: active
+
+### AD-002
+- **Decision**: O front (`soft-go-II`) passa a ter testes com vitest + jsdom + Testing Library (`npm test`), co-localizados como `*.test.ts(x)` ao lado do código.
+- **Reason**: Gate automatizado por tarefa; antes o front só tinha lint/build.
+- **Trade-off**: Novas devDependencies e manutenção de testes de componente.
+- **Scope**: `soft-go-II`.
+- **Date**: 2026-10-07
+- **Status**: active
+
+## Handoff
+
+- **Feature**: auth (`.specs/features/auth/`)
+- **Phase / Task**: Specify, Design e Tasks aprovados; Execute não iniciado (próxima: Phase 1 / T1)
+- **Completed**: none
+- **In-progress** (file:line): none
+- **Next step**: Escolher modo de execução (agentes por fase, inline ou pausando por fase), confirmar a branch de trabalho (o plano foi commitado direto em main/master) e iniciar T1 em `soft-go-ii-api`.
+- **Blockers**: none
+- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar)
+- **Branch**: raiz `main`; API `master`; front `main`

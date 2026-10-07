@@ -1,0 +1,6 @@
+[submodule "soft-go-ii-api"]
+	path = soft-go-ii-api
+	url = https://github.com/marquesgio/soft-go-ii-api.git
+[submodule "soft-go-II"]
+	path = soft-go-II
+	url = https://github.com/marquesgio/soft-go-II.git
