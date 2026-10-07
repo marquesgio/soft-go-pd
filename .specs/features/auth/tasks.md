@@ -10,7 +10,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 **Design**: `.specs/features/auth/design.md`
 **Spec**: `.specs/features/auth/spec.md` · **Context**: `.specs/features/auth/context.md`
-**Status**: Approved (2026-10-07) — execução ainda não iniciada
+**Status**: Done (2026-10-07) — T1–T20 concluídas; Verifier PASS na iteração 2 (`validation.md`)
 
 **Repositórios**: T1–T9 commitam em `soft-go-ii-api/`; T10–T20 commitam em `soft-go-II/`. `.specs/` vive no repo raiz `soft-go-pd` (os dois projetos são submódulos): o código vai no commit do submódulo; a marcação da tarefa em `tasks.md` + o bump do ponteiro do submódulo vão num commit no repo raiz logo em seguida. Sempre `git add` com caminhos explícitos (nunca `tsconfig.build.tsbuildinfo`, `dist/`, `.env`).
 
