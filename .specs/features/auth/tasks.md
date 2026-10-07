@@ -269,12 +269,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: sem header; esquema diferente de Bearer; token malformado; assinatura de outro segredo; token expirado → 401; válido → `true` e `request.user` correto
-- [ ] Gate quick (API) passa; test count: ≥ 6 novos
+- [x] Testes: sem header; esquema diferente de Bearer; token malformado; assinatura de outro segredo; token expirado → 401; válido → `true` e `request.user` correto
+- [x] Gate quick (API) passa; test count: ≥ 6 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add jwt auth guard`
+**Status**: ✅ Done — `soft-go-ii-api@1f5564d`
 
 ---
 
