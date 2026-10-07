@@ -557,12 +557,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: `firstName("  Ana Maria Souza ")` → "Ana"; deslogada → links com `href` `/login` e `/cadastro`, sem "Sair"; logada → "Olá, Ana" e "Sair"; clicar "Sair" → storage sem a chave, header deslogado, rota `/login`
-- [ ] Gate build (front) passa; test count total do front registrado
+- [x] Testes: `firstName("  Ana Maria Souza ")` → "Ana"; deslogada → links com `href` `/login` e `/cadastro`, sem "Sair"; logada → "Olá, Ana" e "Sair"; clicar "Sair" → storage sem a chave, header deslogado, rota `/login`
+- [x] Gate build (front) passa; test count total do front registrado
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: add auth actions to header`
+**Status**: ✅ Done — `soft-go-II@0ab0ff9 (front: 61 testes)`
 
 ---
 
