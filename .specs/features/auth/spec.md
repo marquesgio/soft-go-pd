@@ -181,10 +181,10 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | AUTH-07 | P1: Cadastro | Execute | Done (T9) |
 | AUTH-08 | P1: Cadastro | Execute | Done (T9) |
 | AUTH-09 | P1: Cadastro | Execute | Done (T6) |
-| AUTH-10 | P1: Cadastro | Design | Pending |
-| AUTH-11 | P1: Cadastro | Design | Pending |
-| AUTH-12 | P1: Cadastro | Design | Pending |
-| AUTH-13 | P1: Cadastro | Design | Pending |
+| AUTH-10 | P1: Cadastro | Execute | Done (T17) |
+| AUTH-11 | P1: Cadastro | Execute | Done (T17) |
+| AUTH-12 | P1: Cadastro | Execute | Done (T17) |
+| AUTH-13 | P1: Cadastro | Execute | Done (T17) |
 | AUTH-14 | P1: Login | Execute | Done (T13) |
 | AUTH-15 | P1: Login | Execute | Done (T7) |
 | AUTH-16 | P1: Login | Execute | Done (T9) |
@@ -203,7 +203,7 @@ Every ambiguity is resolved or recorded here - nothing is left silently unclear.
 | AUTH-29 | P1: Sessão | Design | Pending |
 | AUTH-30 | P1: Logout | Design | Pending |
 | AUTH-31 | P1: Logout | Design | Pending |
-| AUTH-32 | Edge | Design | Pending |
+| AUTH-32 | Edge | Execute | Done (T17) |
 | AUTH-33 | Edge | Execute | Done (T11) |
 | AUTH-34 | Edge | Design | Pending |
 

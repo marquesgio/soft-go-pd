@@ -485,12 +485,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: senhas diferentes → "As senhas não coincidem" e serviço não chamado; senha curta → mensagem; sucesso → payload sem `confirmPassword`, toast de sucesso, navegação `/`; 409 → toast "E-mail já cadastrado", continua na página
-- [ ] Gate quick (front) passa; test count: ≥ 4 novos
+- [x] Testes: senhas diferentes → "As senhas não coincidem" e serviço não chamado; senha curta → mensagem; sucesso → payload sem `confirmPassword`, toast de sucesso, navegação `/`; 409 → toast "E-mail já cadastrado", continua na página
+- [x] Gate quick (front) passa; test count: ≥ 4 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add sign up page`
+**Status**: ✅ Done — `soft-go-II@25cc6e8`
 
 ---
 
