@@ -21,10 +21,11 @@
 ## Handoff
 
 - **Feature**: auth (`.specs/features/auth/`)
-- **Phase / Task**: Specify, Design e Tasks aprovados; Execute não iniciado (próxima: Phase 1 / T1)
-- **Completed**: none
+- **Phase / Task**: Phase 1 concluída (T1–T4); próxima: Phase 2 / T5
+- **Completed**: T1, T2, T3, T4
 - **In-progress** (file:line): none
-- **Next step**: Escolher modo de execução (agentes por fase, inline ou pausando por fase), confirmar a branch de trabalho (o plano foi commitado direto em main/master) e iniciar T1 em `soft-go-ii-api`.
-- **Blockers**: none
-- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar)
+- **Next step**: Iniciar T5 (DTOs `SignUpDto`/`SignInDto` em `soft-go-ii-api/src/auth/dto/`). Execução inline, pausando ao fim de cada fase; commits direto em `master`/`main`.
+- **Blockers**: none. Antes de subir a API com o `AuthModule` (T9), definir `JWT_SECRET` no `soft-go-ii-api/.env`.
+- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária, fora do fluxo)
 - **Branch**: raiz `main`; API `master`; front `main`
+- **Gate notes**: build gate da API usa `tsc -p tsconfig.build.json` + `tsc -p tsconfig.json` tolerando só o erro antigo `test/app.e2e-spec.ts(4,21) TS2307` + lint + `npm test`.
