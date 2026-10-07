@@ -101,14 +101,15 @@ T13 → T14 → T15 → T16
 - Skill: `migration` (API)
 
 **Done when**:
-- [ ] Teste de metadata: coluna `phone` com `nullable: true` e `length: 15`
-- [ ] No Postgres local: `migrations:run`, depois `migrations:revert`, depois `migrations:run`, sem erro. Não apaga dados
-- [ ] `migration:generate --dryrun` sem diferenças
-- [ ] Gate build (API) passa
+- [x] Teste de metadata: coluna `phone` com `nullable: true` e `length: 15`
+- [x] No Postgres local: `migrations:run`, depois `migrations:revert`, depois `migrations:run`, sem erro. Não apaga dados
+- [x] `migration:generate --dryrun` sem diferenças
+- [x] Gate build (API) passa
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: add phone column to users`
+**Status**: ✅ Done — `soft-go-ii-api@1f48a76`
 
 ---
 
