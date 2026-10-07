@@ -21,11 +21,11 @@
 ## Handoff
 
 - **Feature**: auth (`.specs/features/auth/`)
-- **Phase / Task**: Phase 2 concluída (T5–T9); próxima: Phase 3 / T10
-- **Completed**: T1–T9 (API completa: 44 testes)
+- **Phase / Task**: Phase 3 concluída (T10–T14); próxima: Phase 4 / T15
+- **Completed**: T1–T14 (API: 44 testes; front: 33 testes)
 - **In-progress** (file:line): none
-- **Next step**: Iniciar T10 (vitest + Testing Library em `soft-go-II`). Execução inline, pausando ao fim de cada fase; commits direto em `master`/`main`.
-- **Blockers**: none (`JWT_SECRET` já definido no `.env` local; schema do banco alinhado às entidades, sem drift)
+- **Next step**: Iniciar T15 (`AuthProvider`/`useAuth` em `soft-go-II/src/context/AuthContext.tsx` + `App.tsx`). Execução inline, pausando ao fim de cada fase; commits direto em `master`/`main`. Depois de T20, rodar o Verifier.
+- **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária, fora do fluxo)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Gate notes**: build gate da API usa `tsc -p tsconfig.build.json` + `tsc -p tsconfig.json` tolerando só o erro antigo `test/app.e2e-spec.ts(4,21) TS2307` + lint + `npm test`.
+- **Gate notes**: API build gate = `tsc -p tsconfig.build.json` + `tsc -p tsconfig.json` (tolera só `test/app.e2e-spec.ts(4,21) TS2307`) + lint + `npm test`. Front build gate = `npm run lint && npm run build && npm test`.

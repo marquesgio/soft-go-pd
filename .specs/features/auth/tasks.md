@@ -413,12 +413,13 @@ T15 → T16 → T17 → T18 → T19 → T20
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: válido passa; senha 7 e 73 → erro em `password`; senhas diferentes → "As senhas não coincidem" em `confirmPassword`; e-mail inválido; nome com 1 char/só espaços; signin vazio → erros
-- [ ] Gate quick (front) passa; test count: ≥ 6 novos
+- [x] Testes: válido passa; senha 7 e 73 → erro em `password`; senhas diferentes → "As senhas não coincidem" em `confirmPassword`; e-mail inválido; nome com 1 char/só espaços; signin vazio → erros
+- [x] Gate quick (front) passa; test count: ≥ 6 novos
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add auth form schemas`
+**Status**: ✅ Done — `soft-go-II@2152f5a`
 
 ---
 
