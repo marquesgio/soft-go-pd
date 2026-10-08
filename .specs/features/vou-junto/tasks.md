@@ -194,12 +194,13 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: token válido → `true` e `request.user` exato. Sem header, esquema diferente, malformado, outro segredo e expirado → `true` e `request.user` indefinido
-- [ ] Gate build (API) passa (fim da Phase 1)
+- [x] Testes: token válido → `true` e `request.user` exato. Sem header, esquema diferente, malformado, outro segredo e expirado → `true` e `request.user` indefinido
+- [x] Gate build (API) passa (fim da Phase 1)
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: add optional jwt auth guard`
+**Status**: ✅ Done — `soft-go-ii-api@ed667cd (API: 63 testes)`
 
 ---
 
