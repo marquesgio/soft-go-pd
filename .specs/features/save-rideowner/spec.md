@@ -181,7 +181,7 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | OWNER-06 | P1: Só quem está logada publica | Execute | Done (T4) |
 | OWNER-07 | P1: Só quem está logada publica | Execute | Done (T4) |
 | OWNER-08 | P1: Só quem está logada publica | Execute | Done (T4) |
-| OWNER-09 | P1: Só quem está logada publica | Design | Pending |
+| OWNER-09 | P1: Só quem está logada publica | Execute | Done (T10) |
 | OWNER-10 | P1: Só quem está logada publica | Execute | Done (T7) |
 | OWNER-11 | P1: Mural mostra a dona | Execute | Done (T3) |
 | OWNER-12 | P1: Mural mostra a dona | Execute | Done (T4) |
@@ -191,7 +191,7 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | OWNER-16 | P1: Mural mostra a dona | Execute | Done (T8) |
 | OWNER-17 | P1: Mural mostra a dona | Execute | Done (T8) |
 | OWNER-18 | P1: Mural mostra a dona | Execute | Done (T8) |
-| OWNER-19 | P2: Dona não se inscreve na própria carona | Execute | Implementing (T8) |
+| OWNER-19 | P2: Dona não se inscreve na própria carona | Execute | Done (T10) |
 | OWNER-20 | P2: Dona não se inscreve na própria carona | Execute | Done (T5) |
 | OWNER-21 | P1: Migration da dona | Execute | Done (T1) |
 | OWNER-22 | P1: Migration da dona | Execute | Done (T1) |

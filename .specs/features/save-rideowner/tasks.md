@@ -377,15 +377,16 @@ No `Modal`, o `Pick` usa `owner`.
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes:
+- [x] Testes:
   - deslogada clica "Vou para a soft" → `/login`;
   - logada → `/form`;
   - logada vê a própria carona com "Sua carona" (o Home passa `currentUserId`)
-- [ ] Gate build (front) passa (fim da Phase 3). Contagem total do front registrada
+- [x] Gate build (front) passa (fim da Phase 3). Contagem total do front registrada
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: send logged-out users to login before publishing`
+**Status**: ✅ Done — `soft-go-II@2c873cb` (front: 136 testes; fim da Phase 3)
 
 ---
 
