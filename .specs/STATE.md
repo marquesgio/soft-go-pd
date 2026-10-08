@@ -43,13 +43,21 @@
 - **Date**: 2026-10-08
 - **Status**: active
 
+### AD-006
+- **Decision**: Só a dona exclui a carona (`DELETE /ride/:id`: `403` para outra conta, `404` se não existe). A exclusão apaga as inscrições em cascata (`ON DELETE CASCADE` de `FK_ride_users_ride`) e nunca é bloqueada por haver participantes. Antes de excluir, o front mostra quantas pessoas confirmaram e quem não tem WhatsApp para ser avisada.
+- **Reason**: Uma carona que não vai acontecer precisa sumir do mural. Bloquear deixaria as inscritas achando que têm carona, e a dona sem saída, porque ninguém consegue sair de uma carona hoje.
+- **Trade-off**: Exclusão definitiva, sem desfazer. Participante sem telefone não recebe aviso ativo: descobre pelo mural. O aviso ativo é o card `prds/notify-ride-deleted.md`.
+- **Scope**: `soft-go-ii-api` (`RideService.remove`, `RideController`) e `soft-go-II` (`Card`, `ConfirmDeleteRideModal`, `Home`).
+- **Date**: 2026-10-08
+- **Status**: active
+
 ## Handoff
 
-- **Feature**: revoke-token (`.specs/features/revoke-token/`) — **concluída**. auth, vou-junto e save-rideowner também estão concluídas
-- **Phase / Task**: Execute concluído (T1–T5); Verifier PASS na iteração 2 (`validation.md`: 16/16 ACs, sensor 17/17)
-- **Completed**: T1–T5 + correção de mocks de teste (iteração 1). API: 153 testes; front: 145 testes. Migration `AddTokenVersionInUsersTable` aplicada no banco local (só adiciona coluna)
+- **Feature**: delete-rides (`.specs/features/delete-rides/`): spec, context e tasks escritos (Draft). auth, vou-junto, save-rideowner e revoke-token concluídas
+- **Phase / Task**: Execute: T1 concluída, próxima T2 (tasks aprovadas em 2026-10-08)
+- **Completed**: nada implementado. API: 153 testes; front: 145 testes
 - **In-progress** (file:line): none
-- **Next step**: Nenhum. API (`cb3fc00`), front (`a3e048b`) e raiz enviados ao GitHub em 2026-10-08
+- **Next step**: Aprovar `tasks.md` e executar T1. Cards futuros criados, nesta ordem: `prds/notify-ride-deleted.md` (cria o canal de aviso) → `prds/leave-ride.md` (reusa o canal para avisar a dona)
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`
