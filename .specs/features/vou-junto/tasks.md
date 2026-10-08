@@ -350,13 +350,14 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Teste: sessão salva sem `phone`, no formato antigo, continua válida (`getSession()` não é `null`). Sessão com `phone` é devolvida igual
-- [ ] Os testes de sessão existentes continuam passando
-- [ ] Gate build (front) passa. `tsc -b` acusa os usos antigos de `RideUser`, que são ajustados no mínimo necessário
+- [x] Teste: sessão salva sem `phone`, no formato antigo, continua válida (`getSession()` não é `null`). Sessão com `phone` é devolvida igual
+- [x] Os testes de sessão existentes continuam passando
+- [x] Gate build (front) passa. `tsc -b` acusa os usos antigos de `RideUser`, que são ajustados no mínimo necessário
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: add participant and phone types`
+**Status**: ✅ Done — `soft-go-II@60defbb`
 
 ---
 
