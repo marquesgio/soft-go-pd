@@ -399,12 +399,13 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: `""` válido. `"51999998888"` válido. `"5199999888"` (10 dígitos), `"519999988889"` (12) e `"51a99998888"` → erro com a mensagem exata. `signUpSchema` com `phone` inválido → erro em `phone`. Sem `phone` → válido
-- [ ] Gate quick (front) passa
+- [x] Testes: `""` válido. `"51999998888"` válido. `"5199999888"` (10 dígitos), `"519999988889"` (12) e `"51a99998888"` → erro com a mensagem exata. `signUpSchema` com `phone` inválido → erro em `phone`. Sem `phone` → válido
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add optional phone schema`
+**Status**: ✅ Done — `soft-go-II@9c7971e`
 
 ---
 
