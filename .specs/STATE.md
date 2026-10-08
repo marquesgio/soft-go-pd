@@ -54,7 +54,7 @@
 ## Handoff
 
 - **Feature**: delete-rides (`.specs/features/delete-rides/`): spec, context e tasks escritos (Draft). auth, vou-junto, save-rideowner e revoke-token concluídas
-- **Phase / Task**: Execute: T1–T5 concluídas, próxima T6 (tasks aprovadas em 2026-10-08)
+- **Phase / Task**: Execute: T1–T6 concluídas, Verifier em andamento (tasks aprovadas em 2026-10-08)
 - **Completed**: nada implementado. API: 153 testes; front: 145 testes
 - **In-progress** (file:line): none
 - **Next step**: Aprovar `tasks.md` e executar T1. Cards futuros criados, nesta ordem: `prds/notify-ride-deleted.md` (cria o canal de aviso) → `prds/leave-ride.md` (reusa o canal para avisar a dona)

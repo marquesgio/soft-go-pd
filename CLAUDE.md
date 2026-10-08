@@ -33,6 +33,7 @@ Toda chamada HTTP do front fica em `soft-go-II/src/service/ride.service.ts`; os 
 | `createRide(payload)` | `POST /ride` | `transportType` é enviado como **número** (id), não objeto. `hour` em `HH:mm`, `date` ISO `YYYY-MM-DD`. |
 | `getAllRidesTypes()` | `GET /transport-type` | `spots: null` = ilimitado (ônibus). |
 | `createRideUser(payload)` | `POST /ride-users` | `{ rideId, name, phone? }`. Carona lotada → `409`; mesmo telefone na mesma carona → conflito. |
+| `deleteRide(id)` | `DELETE /ride/:id` | Exige token. `204` só para a dona; outra conta → `403`, inexistente → `404`. As inscrições saem junto (cascade, AD-006). |
 
 - A API usa `ValidationPipe` com `forbidNonWhitelisted`: qualquer campo extra no body vira `400`. Não envie campos que o DTO não declara.
 - Telefone: o front valida 11 dígitos só números (zod); a API valida telefone BR com DDD. String vazia é tratada como ausente nos dois lados.

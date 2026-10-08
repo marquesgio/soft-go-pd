@@ -10,7 +10,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 **Design**: inline (sem `design.md`: uma rota nova num controller existente, sem migration nem padrão novo)
 **Spec**: `.specs/features/delete-rides/spec.md` · **Context**: `.specs/features/delete-rides/context.md`
-**Status**: In Progress
+**Status**: In Progress — T1–T6 concluídas; Verifier pendente
 
 **Repositórios**:
 - T1–T2 commitam em `soft-go-ii-api/` (`master`). T3–T6 commitam em `soft-go-II/` (`main`).
@@ -258,7 +258,7 @@ T3 → T4 → T5 → T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes (serviços mockados):
+- [x] Testes (serviços mockados):
   - logada como dona → card com "Excluir carona"; clique abre "Excluir carona?";
   - logada como outra conta → sem "Excluir carona";
   - "Cancelar" → `deleteRide` não chamado, modal fecha;
@@ -267,11 +267,12 @@ T3 → T4 → T5 → T6
   - `404` com mensagem → toast "Carona não encontrada", `getRides` chamado de novo;
   - `500` → toast "Não foi possível excluir a carona. Tente novamente.", a carona continua na lista;
   - `401` → nenhum toast do Home
-- [ ] Gate build (front) passa (fim da Phase 2). Contagem total do front registrada
+- [x] Gate build (front) passa (fim da Phase 2). Contagem total do front registrada
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: let owners delete rides from the board`
+**Status**: ✅ Done — `soft-go-II@3f74f33` (front: 173 testes; fim da Phase 2)
 
 ---
 
