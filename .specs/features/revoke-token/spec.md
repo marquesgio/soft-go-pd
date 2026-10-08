@@ -142,8 +142,8 @@ O "Sair" só apaga o token do navegador. A API aceita qualquer token com assinat
 | -------------- | ----- | ----- | ------ |
 | REVOKE-01 | P1: Sair invalida os tokens da conta | Execute | Done (T4) |
 | REVOKE-02 | P1: Sair invalida os tokens da conta | Execute | Done (T4) |
-| REVOKE-03 | P1: Sair invalida os tokens da conta | Design | Pending |
-| REVOKE-04 | P1: Sair invalida os tokens da conta | Design | Pending |
+| REVOKE-03 | P1: Sair invalida os tokens da conta | Execute | Done (T5) |
+| REVOKE-04 | P1: Sair invalida os tokens da conta | Execute | Done (T5) |
 | REVOKE-05 | P1: A API só aceita a versão atual | Execute | Done (T2) |
 | REVOKE-06 | P1: A API só aceita a versão atual | Execute | Done (T4) |
 | REVOKE-07 | P1: A API só aceita a versão atual | Execute | Done (T3) |

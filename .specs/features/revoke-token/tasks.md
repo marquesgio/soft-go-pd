@@ -206,15 +206,16 @@ T5
 - Skill: NONE
 
 **Done when**:
-- [ ] Unit service: `signOut("abc")` → `post("/auth/signout", null, { headers: { Authorization: "Bearer abc" } })`
-- [ ] Unit context:
+- [x] Unit service: `signOut("abc")` → `post("/auth/signout", null, { headers: { Authorization: "Bearer abc" } })`
+- [x] Unit context:
   - "sair" chama `authService.signOut` com o token da sessão, limpa o `localStorage` e vai para `/login`;
   - com a API rejeitando (`401`, `500`, rede) a sessão também é limpa, vai para `/login` e nenhum toast "Sua sessão expirou" aparece
-- [ ] Gate build (front) passa
+- [x] Gate build (front) passa
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: revoke sessions on sign out`
+**Status**: ✅ Done — `soft-go-II@755bc40` (front: 145 testes; fim da Phase 2)
 
 ---
 
