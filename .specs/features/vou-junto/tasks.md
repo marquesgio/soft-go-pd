@@ -258,18 +258,19 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] HTTP (repos fake):
+- [x] HTTP (repos fake):
   - com token → 201 `{ id, rideId, userId }`, com o `userId` do token;
   - sem token, token inválido e token expirado → 401, sem nada criado;
   - body com `name` → 400;
   - `phone` inválido → 400;
   - segunda confirmação → 409 com a mensagem exata.
-- [ ] Teste "Nenhum guard global" continua passando. O teste das rotas abertas foi atualizado conforme o AD-003
-- [ ] Gate quick (API) passa
+- [x] Teste "Nenhum guard global" continua passando. O teste das rotas abertas foi atualizado conforme o AD-003
+- [x] Gate quick (API) passa
 
 **Tests**: integration
 **Gate**: quick
 **Commit**: `feat: require login to join a ride`
+**Status**: ✅ Done — `soft-go-ii-api@2886d69`
 
 ---
 
