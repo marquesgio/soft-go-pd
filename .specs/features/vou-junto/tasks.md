@@ -10,7 +10,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 **Design**: `.specs/features/vou-junto/design.md`
 **Spec**: `.specs/features/vou-junto/spec.md` · **Context**: `.specs/features/vou-junto/context.md`
-**Status**: Approved (2026-10-07). Execução inline, pausando por fase
+**Status**: Done (2026-10-08) — T1–T16 concluídas; Verifier PASS na iteração 3 (`validation.md`)
 
 **Repositórios**:
 - T1–T8 commitam em `soft-go-ii-api/` (`master`). T9–T16 commitam em `soft-go-II/` (`main`).

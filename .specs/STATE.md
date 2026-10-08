@@ -36,12 +36,12 @@
 
 ## Handoff
 
-- **Feature**: vou-junto (`.specs/features/vou-junto/`). A feature auth está concluída
-- **Phase / Task**: Phase 3 concluída (T9–T12); próxima: Phase 4 / T13
-- **Completed**: T1–T12 (API 95 testes; front 81 testes) (migrations aplicadas no banco local: `users.phone` e `LinkRideUsersToUsers`, inscrições antigas apagadas com o "sim" da usuária)
+- **Feature**: vou-junto (`.specs/features/vou-junto/`) — **concluída**. A feature auth também está concluída
+- **Phase / Task**: Execute concluído (T1–T16); Verifier PASS na iteração 3 (`validation.md`: 28/28 ACs, sensor 12/12)
+- **Completed**: T1–T16 + correções de teste do Verifier (iterações 1–2). API: 96 testes; front: 109 testes. Migrations aplicadas no banco local (inscrições antigas apagadas com consentimento)
 - **In-progress** (file:line): none
-- **Next step**: T13 (WhatsApp opcional no cadastro). Depois da T16, rodar o Verifier. Execução inline, pausando ao fim de cada fase; commits direto em `master`/`main`.
+- **Next step**: Nenhum na feature. Pendente da usuária: decidir quando publicar (`git push` da API, do front e depois da raiz; nada foi enviado ao GitHub). Ideias adiadas em `vou-junto/context.md` → Deferred Ideas.
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Gate notes**: API build gate = `tsc -p tsconfig.build.json` + `tsc -p tsconfig.json` (tolera só `test/app.e2e-spec.ts(4,21) TS2307`) + lint + `npm test`. Front build gate = `npm run lint && npm run build && npm test`.
+- **Deploy note**: `POST /ride-users` mudou de contrato (sem `name`, exige Bearer). API e front precisam subir juntos.
