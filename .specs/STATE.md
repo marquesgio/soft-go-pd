@@ -8,7 +8,7 @@
 - **Trade-off**: Sem revogação de token e exposição a XSS; login social/SSO exigirá adotar Passport ou nova estratégia. Revisitar (cookie httpOnly e/ou revogação) quando rotas sensíveis passarem a exigir auth.
 - **Scope**: `soft-go-ii-api` (todas as rotas protegidas futuras) e `soft-go-II` (`service/session.ts`, `service/api.ts`, `AuthProvider`).
 - **Date**: 2026-10-07
-- **Status**: active
+- **Status**: active (logout e consulta ao banco substituídos pela AD-005)
 
 ### AD-002
 - **Decision**: O front (`soft-go-II`) passa a ter testes com vitest + jsdom + Testing Library (`npm test`), co-localizados como `*.test.ts(x)` ao lado do código.
@@ -33,6 +33,14 @@
 - **Trade-off**: Perda irreversível das inscrições antigas. Toda inscrição exige conta. Exibir participante exige join com `users`.
 - **Scope**: `soft-go-ii-api` (`ride_users`, `users`, `RideService`, `RideUsersService`) e `soft-go-II` (tipos `Participant`, `User.phone`).
 - **Date**: 2026-10-07
+- **Status**: active
+
+### AD-005
+- **Decision**: Toda conta tem `users.token_version`. O JWT carrega `ver`, e os dois guards (via `verifySession`) só aceitam o token se `ver` for igual à versão atual da conta. `POST /auth/signout` incrementa a versão: "Sair" encerra a sessão em todos os aparelhos. Substitui, na AD-001, "logout é só no cliente" e "o guard não consulta o banco".
+- **Reason**: O token passou a liberar ações e dados pessoais (vou-junto, save-rideowner); uma cópia do token não pode continuar valendo depois de sair. Opção mais simples que revoga de verdade.
+- **Trade-off**: Uma consulta a `users` por requisição com token. Não existe "sair só deste aparelho". Tokens emitidos antes da feature (sem `ver`) deixam de valer. O risco de XSS do `localStorage` continua (AD-001).
+- **Scope**: `soft-go-ii-api` (`auth/`, todas as rotas com `JwtAuthGuard`/`OptionalJwtAuthGuard`) e `soft-go-II` (`AuthContext.signOut`). Futura troca de senha deve incrementar `token_version`.
+- **Date**: 2026-10-08
 - **Status**: active
 
 ## Handoff
