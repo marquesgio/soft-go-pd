@@ -112,15 +112,16 @@ T5
 - Skill: NONE
 
 **Done when**:
-- [ ] Unit:
+- [x] Unit:
   - signup e signin → token decodificado tem `ver` igual ao `tokenVersion` da conta (ex.: 3);
   - `user` da resposta sem `tokenVersion`;
   - `signOut(7)` → `increment({ id: 7 }, 'tokenVersion', 1)` e nenhum `update`/`save` de outros campos
-- [ ] Gate quick (API) passa
+- [x] Gate quick (API) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: carry session version in tokens`
+**Status**: ✅ Done — `soft-go-ii-api@2419799` (API: 135 testes)
 
 ---
 

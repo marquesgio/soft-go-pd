@@ -140,11 +140,11 @@ O "Sair" só apaga o token do navegador. A API aceita qualquer token com assinat
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| REVOKE-01 | P1: Sair invalida os tokens da conta | Design | Pending |
+| REVOKE-01 | P1: Sair invalida os tokens da conta | Execute | Implementing (T2) |
 | REVOKE-02 | P1: Sair invalida os tokens da conta | Design | Pending |
 | REVOKE-03 | P1: Sair invalida os tokens da conta | Design | Pending |
 | REVOKE-04 | P1: Sair invalida os tokens da conta | Design | Pending |
-| REVOKE-05 | P1: A API só aceita a versão atual | Design | Pending |
+| REVOKE-05 | P1: A API só aceita a versão atual | Execute | Done (T2) |
 | REVOKE-06 | P1: A API só aceita a versão atual | Design | Pending |
 | REVOKE-07 | P1: A API só aceita a versão atual | Design | Pending |
 | REVOKE-08 | P1: A API só aceita a versão atual | Design | Pending |
@@ -152,10 +152,10 @@ O "Sair" só apaga o token do navegador. A API aceita qualquer token com assinat
 | REVOKE-10 | P1: A API só aceita a versão atual | Design | Pending |
 | REVOKE-11 | P1: Entrar de novo e outras contas | Design | Pending |
 | REVOKE-12 | P1: Entrar de novo e outras contas | Design | Pending |
-| REVOKE-13 | P1: Entrar de novo e outras contas | Design | Pending |
+| REVOKE-13 | P1: Entrar de novo e outras contas | Execute | Implementing (T2) |
 | REVOKE-14 | P1: Migration da versão | Execute | Done (T1) |
 | REVOKE-15 | P1: Migration da versão | Execute | Done (T1) |
-| REVOKE-16 | P1: Migration da versão | Design | Pending |
+| REVOKE-16 | P1: Migration da versão | Execute | Done (T2) |
 
 **Coverage:** 16 total, 0 mapped to tasks, 16 unmapped ⚠️
 
