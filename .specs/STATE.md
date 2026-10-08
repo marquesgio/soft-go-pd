@@ -49,7 +49,7 @@
 - **Phase / Task**: Execute concluído (T1–T5); Verifier PASS na iteração 2 (`validation.md`: 16/16 ACs, sensor 17/17)
 - **Completed**: T1–T5 + correção de mocks de teste (iteração 1). API: 153 testes; front: 145 testes. Migration `AddTokenVersionInUsersTable` aplicada no banco local (só adiciona coluna)
 - **In-progress** (file:line): none
-- **Next step**: Pendente da usuária: autorizar o `git push` (API `cb3fc00`, front `a3e048b`, depois a raiz). Fora isso, nenhum
+- **Next step**: Nenhum. API (`cb3fc00`), front (`a3e048b`) e raiz enviados ao GitHub em 2026-10-08
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`
