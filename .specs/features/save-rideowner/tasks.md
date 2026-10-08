@@ -132,17 +132,18 @@ T9 → T10
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes unit:
+- [x] Testes unit:
   - salva com `ownerId` do argumento;
   - conta inexistente → `401` "Não autenticado", `save` não chamado e `update` não chamado;
   - com `phone` → `update(ownerId, { phone })`, e a carona salva não tem `phone`;
   - sem `phone` → `update` não chamado;
   - tipo de transporte inexistente → `404` (já existente, mantido)
-- [ ] Gate quick (API) passa
+- [x] Gate quick (API) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: save ride owner on create`
+**Status**: ✅ Done — `soft-go-ii-api@83a6d48` (API: 104 testes; tsc do controller fecha no T4)
 
 ---
 

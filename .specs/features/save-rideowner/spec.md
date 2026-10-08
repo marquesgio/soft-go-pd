@@ -175,12 +175,12 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | -------------- | ----- | ----- | ------ |
 | OWNER-01 | P1: Publicar carona logada | Design | Pending |
 | OWNER-02 | P1: Publicar carona logada | Design | Pending |
-| OWNER-03 | P1: Publicar carona logada | Design | Pending |
+| OWNER-03 | P1: Publicar carona logada | Execute | Implementing (T2) |
 | OWNER-04 | P1: Publicar carona logada | Design | Pending |
 | OWNER-05 | P1: Publicar carona logada | Design | Pending |
 | OWNER-06 | P1: Só quem está logada publica | Design | Pending |
 | OWNER-07 | P1: Só quem está logada publica | Design | Pending |
-| OWNER-08 | P1: Só quem está logada publica | Design | Pending |
+| OWNER-08 | P1: Só quem está logada publica | Execute | Implementing (T2) |
 | OWNER-09 | P1: Só quem está logada publica | Design | Pending |
 | OWNER-10 | P1: Só quem está logada publica | Design | Pending |
 | OWNER-11 | P1: Mural mostra a dona | Design | Pending |
@@ -198,9 +198,9 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | OWNER-23 | P1: Migration da dona | Execute | Done (T1) |
 | OWNER-24 | P1: Migration da dona | Execute | Done (T1) |
 | OWNER-25 | P1: Publicar carona logada | Design | Pending |
-| OWNER-26 | P1: Publicar carona logada | Design | Pending |
+| OWNER-26 | P1: Publicar carona logada | Execute | Implementing (T2) |
 | OWNER-27 | P1: Publicar carona logada | Design | Pending |
-| OWNER-28 | P1: Publicar carona logada | Design | Pending |
+| OWNER-28 | P1: Publicar carona logada | Execute | Implementing (T2) |
 | OWNER-29 | P1: Publicar carona logada | Design | Pending |
 | OWNER-30 | P1: Publicar carona logada | Design | Pending |
 
