@@ -423,12 +423,13 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: `updateUser({ ...user, phone })` → `getSession().user.phone` atualizado, token preservado e o consumidor vê o novo `phone`. `getMe` no mount com `phone` novo → a sessão salva reflete o `phone`
-- [ ] Gate build (front) passa (fim da Phase 3)
+- [x] Testes: `updateUser({ ...user, phone })` → `getSession().user.phone` atualizado, token preservado e o consumidor vê o novo `phone`. `getMe` no mount com `phone` novo → a sessão salva reflete o `phone`
+- [x] Gate build (front) passa (fim da Phase 3)
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: allow updating the logged user`
+**Status**: ✅ Done — `soft-go-II@f932703 (front: 81 testes)`
 
 ---
 
