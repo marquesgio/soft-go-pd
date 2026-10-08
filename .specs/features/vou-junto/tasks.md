@@ -288,17 +288,18 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes:
+- [x] Testes:
   - `participants` com `userId` e primeiro nome ("Ana Maria Souza" → "Ana");
   - sem `viewer`, nenhum participante tem a chave `phone`;
   - com `viewer`, `phone` traz o valor ou `null`;
   - nenhum campo de senha nem `email` aparece em `participants`;
   - `transportType.spots` desconta as inscrições como antes.
-- [ ] Gate quick (API) passa
+- [x] Gate quick (API) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: list ride participants`
+**Status**: ✅ Done — `soft-go-ii-api@134058c`
 
 ---
 

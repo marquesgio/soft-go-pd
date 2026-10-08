@@ -188,12 +188,12 @@ O modal "Quero ir junto!" pede nome e telefone a cada inscrição, mesmo agora q
 | JOIN-17 | P1: Telefone na conta | Tasks | Pending |
 | JOIN-18 | P1: Telefone na conta | Tasks | Pending |
 | JOIN-19 | P1: Telefone na conta | Execute | Done (T6) |
-| JOIN-20 | P1: Participantes no card | Tasks | Pending |
+| JOIN-20 | P1: Participantes no card | Execute | Done (T7) |
 | JOIN-21 | P1: Participantes no card | Tasks | Pending |
 | JOIN-22 | P1: Participantes no card | Tasks | Pending |
 | JOIN-23 | P1: Participantes no card | Tasks | Pending |
 | JOIN-24 | P1: Participantes no card | Tasks | Pending |
-| JOIN-25 | P1: Participantes no card | Tasks | Pending |
+| JOIN-25 | P1: Participantes no card | Execute | Done (T7) |
 | JOIN-26 | Edge | Execute | Done (T5) |
 | JOIN-27 | Edge | Tasks | Pending |
 | JOIN-28 | Edge | Execute | Done (T2) |
