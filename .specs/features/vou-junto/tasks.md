@@ -136,15 +136,16 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: `migration` (API)
 
 **Done when**:
-- [ ] Teste de metadata: `userId` não nullable, `UQ_ride_user` em `['rideId','userId']`, FK `FK_ride_users_user`, sem colunas `name`/`phone`
-- [ ] **Banco temporário** com todas as migrations: `run`, depois `revert` desta, depois `run`, sem erro. Com uma linha antiga semeada, ela some depois do `up`
-- [ ] **Pedir confirmação da usuária antes** de rodar no banco local, porque apaga as 35 inscrições
-- [ ] No banco local (após o "sim"): `migrations:run` e `migration:generate --dryrun` sem diferenças
-- [ ] Gate build (API) passa
+- [x] Teste de metadata: `userId` não nullable, `UQ_ride_user` em `['rideId','userId']`, FK `FK_ride_users_user`, sem colunas `name`/`phone`
+- [x] **Banco temporário** com todas as migrations: `run`, depois `revert` desta, depois `run`, sem erro. Com uma linha antiga semeada, ela some depois do `up`
+- [x] **Pedir confirmação da usuária antes** de rodar no banco local, porque apaga as 35 inscrições
+- [x] No banco local (após o "sim"): `migrations:run` e `migration:generate --dryrun` sem diferenças
+- [x] Gate build (API) passa
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: link ride users to users`
+**Status**: ✅ Done — `soft-go-ii-api@82c062a`
 
 ---
 

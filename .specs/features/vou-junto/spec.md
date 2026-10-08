@@ -196,7 +196,7 @@ O modal "Quero ir junto!" pede nome e telefone a cada inscrição, mesmo agora q
 | JOIN-25 | P1: Participantes no card | Tasks | Pending |
 | JOIN-26 | Edge | Tasks | Pending |
 | JOIN-27 | Edge | Tasks | Pending |
-| JOIN-28 | Edge | Tasks | Pending |
+| JOIN-28 | Edge | Execute | Done (T2) |
 
 **Coverage:** 28 total, 28 mapped to tasks (ver `tasks.md` → Requirement Coverage), 0 unmapped
 
