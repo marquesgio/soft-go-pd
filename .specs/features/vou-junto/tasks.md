@@ -229,12 +229,13 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: `novo-recurso` (API)
 
 **Done when**:
-- [ ] Testes: sucesso salva `{ rideId, userId }` e retorna `{ id, rideId, userId }`. Carona inexistente → `NotFoundException` "Corrida não encontrada". Duplicada → 409 com a mensagem exata, sem `save` e sem update de telefone. Lotada → 409 de vagas, sem `save` e sem update. Com `phone` → update de `phone` na conta antes do `save`. Sem `phone` → nenhum update. 23505 → 409 de duplicidade. Outro erro → relançado
-- [ ] Gate quick (API) passa
+- [x] Testes: sucesso salva `{ rideId, userId }` e retorna `{ id, rideId, userId }`. Carona inexistente → `NotFoundException` "Corrida não encontrada". Duplicada → 409 com a mensagem exata, sem `save` e sem update de telefone. Lotada → 409 de vagas, sem `save` e sem update. Com `phone` → update de `phone` na conta antes do `save`. Sem `phone` → nenhum update. 23505 → 409 de duplicidade. Outro erro → relançado
+- [x] Gate quick (API) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: join ride as logged user`
+**Status**: ✅ Done — `soft-go-ii-api@dfac3e1 (o create antigo sai na T6, junto com o controller)`
 
 ---
 
