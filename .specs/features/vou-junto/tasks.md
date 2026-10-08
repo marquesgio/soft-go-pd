@@ -471,17 +471,18 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes:
+- [x] Testes:
   - nomes listados;
   - sem `showPhones`, nenhum link `wa.me` de participante;
   - com `showPhones`, link com o `href` exato para quem tem telefone e nenhum link para quem não tem;
   - usuária na lista → "Você vai nesta carona", sem o botão "Vou junto";
   - fora da lista e com vaga → botão "Vou junto".
-- [ ] Gate quick (front) passa
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: show participants on ride card`
+**Status**: ✅ Done — `soft-go-II@3a45cc8`
 
 ---
 

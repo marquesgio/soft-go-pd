@@ -191,7 +191,7 @@ O modal "Quero ir junto!" pede nome e telefone a cada inscrição, mesmo agora q
 | JOIN-20 | P1: Participantes no card | Execute | Done (T7) |
 | JOIN-21 | P1: Participantes no card | Execute | Done (T8) |
 | JOIN-22 | P1: Participantes no card | Execute | Done (T8) |
-| JOIN-23 | P1: Participantes no card | Tasks | Pending |
+| JOIN-23 | P1: Participantes no card | Execute | Done (T14) |
 | JOIN-24 | P1: Participantes no card | Tasks | Pending |
 | JOIN-25 | P1: Participantes no card | Execute | Done (T7) |
 | JOIN-26 | Edge | Execute | Done (T5) |
