@@ -168,12 +168,13 @@ T3 → T4 → T5 → T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes unit: `deleteRide(7)` chama `api.delete("/ride/7")` uma vez, sem body; erro da API é propagado
-- [ ] Gate quick (front) passa
+- [x] Testes unit: `deleteRide(7)` chama `api.delete("/ride/7")` uma vez, sem body; erro da API é propagado
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add delete ride service`
+**Status**: ✅ Done — `soft-go-II@efbab79` (front: 147 testes)
 
 ---
 
