@@ -169,20 +169,21 @@ T5
 - Skill: NONE
 
 **Done when**:
-- [ ] HTTP (repositório de usuárias em memória):
+- [x] HTTP (repositório de usuárias em memória):
   - signin → signout com o token: `204`, corpo vazio, `tokenVersion` da conta 0 → 1;
   - depois: `GET /auth/me` com o token antigo → `401` "Não autenticado";
   - signin de novo → token novo → `GET /auth/me` `200`;
   - conta B logada antes do signout da A → `GET /auth/me` com o token da B `200`;
   - signout sem token / token inválido / token já revogado → `401`, e `tokenVersion` de nenhuma conta muda;
   - signout não muda nome, e-mail, telefone nem `passwordHash`
-- [ ] HTTP mural (REVOKE-09): `GET /ride` com token de versão antiga → `owner` e `participants` sem `phone` (em `ride.controller.spec.ts`)
-- [ ] Guard map com `signOut: [JwtAuthGuard]`; "Nenhum guard global" verde (L-001)
-- [ ] Gate build (API) passa (fim da Phase 1)
+- [x] HTTP mural (REVOKE-09): `GET /ride` com token de versão antiga → `owner` e `participants` sem `phone` (em `ride.controller.spec.ts`)
+- [x] Guard map com `signOut: [JwtAuthGuard]`; "Nenhum guard global" verde (L-001)
+- [x] Gate build (API) passa (fim da Phase 1)
 
 **Tests**: integration
 **Gate**: build
 **Commit**: `feat: add sign out route that revokes sessions`
+**Status**: ✅ Done — `soft-go-ii-api@cb3fc00` (API: 153 testes; fim da Phase 1)
 
 ---
 
