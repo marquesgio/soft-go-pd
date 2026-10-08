@@ -60,6 +60,18 @@ Seen once or not yet corroborated. Tracked, not trusted.
 - evidence: A16 soft-go-ii-api/src/ride-users/dto/create-ride-user.dto.ts:15 (api/validation)
 - last seen: 2026-10-08T14:42:32Z
 
+### L-009 - Ao adicionar uma função a um módulo de serviço, atualizar todo vi.mock desse módulo para devolver uma Promise e conferir que o gate de testes sai com código 0, sem Unhandled Errors.
+- signal: `gate_fail` · recurrence: 1 feature(s) · scope: `front/tests` · harmful: 0
+- features: revoke-token
+- evidence: soft-go-II/src/components/Header.test.tsx:9 + src/context/AuthContext.test.tsx:134 (unhandled errors, npm test exit 1) (front/tests)
+- last seen: 2026-10-08T18:41:38Z
+
+### L-010 - Quando um erro deve ser engolido de propósito, o teste deve falhar se a rejeição ficar sem tratamento, não só conferir o estado final.
+- signal: `surviving_mutant` · recurrence: 1 feature(s) · scope: `front/state` · harmful: 0
+- features: revoke-token
+- evidence: F6 soft-go-II/src/context/AuthContext.tsx:85 (.catch removido sobreviveu) (front/state)
+- last seen: 2026-10-08T18:41:38Z
+
 ## Quarantined (failed when applied - ignore)
 
 A confirmed lesson that recurred alongside failure. Kept for the maintainer to review.

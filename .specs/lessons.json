@@ -3,7 +3,7 @@
   "promote_threshold": 2,
   "window_days": 45,
   "quarantine_threshold": 2,
-  "next_id": 9,
+  "next_id": 11,
   "lessons": [
     {
       "id": "L-001",
@@ -150,6 +150,42 @@
       ],
       "created": "2026-10-08T14:42:32Z",
       "last_seen": "2026-10-08T14:42:32Z"
+    },
+    {
+      "id": "L-009",
+      "key": "gate_fail::ao adicionar uma funcao a um modulo de servico atualizar todo vi mock desse modulo para devolver uma promise e conferir que o gate de testes sai com codigo 0 sem unhandled errors",
+      "text": "Ao adicionar uma função a um módulo de serviço, atualizar todo vi.mock desse módulo para devolver uma Promise e conferir que o gate de testes sai com código 0, sem Unhandled Errors.",
+      "signal": "gate_fail",
+      "scope": "front/tests",
+      "status": "candidate",
+      "features": [
+        "revoke-token"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "soft-go-II/src/components/Header.test.tsx:9 + src/context/AuthContext.test.tsx:134 (unhandled errors, npm test exit 1) (front/tests)"
+      ],
+      "created": "2026-10-08T18:41:38Z",
+      "last_seen": "2026-10-08T18:41:38Z"
+    },
+    {
+      "id": "L-010",
+      "key": "surviving_mutant::quando um erro deve ser engolido de proposito o teste deve falhar se a rejeicao ficar sem tratamento nao so conferir o estado final",
+      "text": "Quando um erro deve ser engolido de propósito, o teste deve falhar se a rejeição ficar sem tratamento, não só conferir o estado final.",
+      "signal": "surviving_mutant",
+      "scope": "front/state",
+      "status": "candidate",
+      "features": [
+        "revoke-token"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "F6 soft-go-II/src/context/AuthContext.tsx:85 (.catch removido sobreviveu) (front/state)"
+      ],
+      "created": "2026-10-08T18:41:38Z",
+      "last_seen": "2026-10-08T18:41:38Z"
     }
   ]
 }
