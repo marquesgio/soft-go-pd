@@ -447,12 +447,13 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: campo visível com o rótulo exato. Telefone inválido → mensagem abaixo do campo, `aria-invalid` e serviço não chamado. Com telefone → `signUp` recebe `phone`. Sem telefone → `signUp` sem `phone`. Os testes existentes do cadastro continuam passando
-- [ ] Gate quick (front) passa
+- [x] Testes: campo visível com o rótulo exato. Telefone inválido → mensagem abaixo do campo, `aria-invalid` e serviço não chamado. Com telefone → `signUp` recebe `phone`. Sem telefone → `signUp` sem `phone`. Os testes existentes do cadastro continuam passando
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add optional phone to sign up form`
+**Status**: ✅ Done — `soft-go-II@361d912`
 
 ---
 
