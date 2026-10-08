@@ -10,7 +10,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 **Design**: inline (sem `design.md`: uma rota nova num controller existente, sem migration nem padrão novo)
 **Spec**: `.specs/features/delete-rides/spec.md` · **Context**: `.specs/features/delete-rides/context.md`
-**Status**: In Progress — T1–T6 concluídas; Verifier pendente
+**Status**: Done (2026-10-08) — T1–T6 concluídas; Verifier PASS na iteração 1 (`validation.md`)
 
 **Repositórios**:
 - T1–T2 commitam em `soft-go-ii-api/` (`master`). T3–T6 commitam em `soft-go-II/` (`main`).

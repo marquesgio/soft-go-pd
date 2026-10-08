@@ -2,7 +2,7 @@
 
 **PRD**: `prds/delete-rides.md`
 **Context**: `.specs/features/delete-rides/context.md`
-**Status**: In Progress (2026-10-08)
+**Status**: Done (2026-10-08). Verifier PASS (`validation.md`)
 
 ## Problem Statement
 
@@ -118,22 +118,22 @@ Hoje não existe forma de excluir uma carona publicada por engano ou que não va
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| DEL-01 | P1: API exclui só para a dona | Execute | Implemented (T1, T2) |
-| DEL-02 | P1: API exclui só para a dona | Execute | Implemented (T1, T2) |
-| DEL-03 | P1: API exclui só para a dona | Execute | Implemented (T1, T2) |
-| DEL-04 | P1: API exclui só para a dona | Execute | Implemented (T1, T2) |
-| DEL-05 | P1: API exclui só para a dona | Execute | Implemented (T2) |
-| DEL-06 | P1: API exclui só para a dona | Execute | Implemented (T2) |
-| DEL-07 | P1: API exclui só para a dona | Execute | Implemented (T2) |
-| DEL-08 | P1: Dona exclui pelo card | Execute | Implemented (T4, T6) |
-| DEL-09 | P1: Dona exclui pelo card | Execute | Implemented (T4) |
-| DEL-10 | P1: Dona exclui pelo card | Execute | Implemented (T5, T6) |
-| DEL-11 | P1: Dona exclui pelo card | Execute | Implemented (T5) |
-| DEL-12 | P1: Dona exclui pelo card | Execute | Implemented (T5) |
-| DEL-13 | P1: Dona exclui pelo card | Execute | Implemented (T5, T6) |
-| DEL-14 | P1: Dona exclui pelo card | Execute | Implemented (T3, T5, T6) |
-| DEL-15 | P1: Dona exclui pelo card | Execute | Implemented (T6) |
-| DEL-16 | P1: Dona exclui pelo card | Execute | Implemented (T6) |
+| DEL-01 | P1: API exclui só para a dona | Execute | Verified (T1, T2) |
+| DEL-02 | P1: API exclui só para a dona | Execute | Verified (T1, T2) |
+| DEL-03 | P1: API exclui só para a dona | Execute | Verified (T1, T2) |
+| DEL-04 | P1: API exclui só para a dona | Execute | Verified (T1, T2) |
+| DEL-05 | P1: API exclui só para a dona | Execute | Verified (T2) |
+| DEL-06 | P1: API exclui só para a dona | Execute | Verified (T2) |
+| DEL-07 | P1: API exclui só para a dona | Execute | Verified (T2) |
+| DEL-08 | P1: Dona exclui pelo card | Execute | Verified (T4, T6) |
+| DEL-09 | P1: Dona exclui pelo card | Execute | Verified (T4) |
+| DEL-10 | P1: Dona exclui pelo card | Execute | Verified (T5, T6) |
+| DEL-11 | P1: Dona exclui pelo card | Execute | Verified (T5) |
+| DEL-12 | P1: Dona exclui pelo card | Execute | Verified (T5) |
+| DEL-13 | P1: Dona exclui pelo card | Execute | Verified (T5, T6) |
+| DEL-14 | P1: Dona exclui pelo card | Execute | Verified (T3, T5, T6) |
+| DEL-15 | P1: Dona exclui pelo card | Execute | Verified (T6) |
+| DEL-16 | P1: Dona exclui pelo card | Execute | Verified (T6) |
 
 **Coverage:** 16 total, 16 mapped to tasks, 0 unmapped
 

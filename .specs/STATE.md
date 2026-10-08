@@ -53,12 +53,12 @@
 
 ## Handoff
 
-- **Feature**: delete-rides (`.specs/features/delete-rides/`): spec, context e tasks escritos (Draft). auth, vou-junto, save-rideowner e revoke-token concluídas
-- **Phase / Task**: Execute: T1–T6 concluídas, Verifier em andamento (tasks aprovadas em 2026-10-08)
-- **Completed**: nada implementado. API: 153 testes; front: 145 testes
+- **Feature**: delete-rides (`.specs/features/delete-rides/`) — **concluída**. auth, vou-junto, save-rideowner e revoke-token também estão concluídas
+- **Phase / Task**: Execute concluído (T1–T6); Verifier PASS na iteração 1 (`validation.md`: 16/16 ACs, sensor 20/20)
+- **Completed**: T1–T6. API: 167 testes; front: 173 testes. Checagem manual do cascade no banco local (duas contas de teste `*.delete.<timestamp>@teste.com` ficaram no banco)
 - **In-progress** (file:line): none
-- **Next step**: Aprovar `tasks.md` e executar T1. Cards futuros criados, nesta ordem: `prds/notify-ride-deleted.md` (cria o canal de aviso) → `prds/leave-ride.md` (reusa o canal para avisar a dona)
+- **Next step**: Enviar ao GitHub quando a usuária autorizar (API `541c0ca`, front `3f74f33`, raiz). Próximos cards, nesta ordem: `prds/notify-ride-deleted.md` → `prds/leave-ride.md`
 - **Blockers**: none
-- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
+- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária, inclui os cards novos `notify-ride-deleted.md` e `leave-ride.md`)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Deploy note**: API e front sobem juntos. Depois do deploy, todos os tokens antigos (sem `ver`) param de valer e todas as usuárias entram de novo uma vez. A migration só adiciona `users.token_version` (não apaga dados). Atenção: a migration `AddOwnerToRides` (save-rideowner) apaga todas as caronas no banco em que ainda não rodou
+- **Deploy note**: Só código; sem migration. O cascade já existe no banco (`FK_ride_users_ride ON DELETE CASCADE`). API e front sobem juntos
