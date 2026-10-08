@@ -375,12 +375,13 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes (api mockado): `createRideUser({ rideId: 3 })` → `POST /ride-users` com `{ rideId: 3 }` exato. Com `phone` → inclui `phone`. Nunca envia `name`. `signUp` com `phone` → body inclui `phone`. Sem `phone` → body sem a chave
-- [ ] Gate quick (front) passa
+- [x] Testes (api mockado): `createRideUser({ rideId: 3 })` → `POST /ride-users` com `{ rideId: 3 }` exato. Com `phone` → inclui `phone`. Nunca envia `name`. `signUp` com `phone` → body inclui `phone`. Sem `phone` → body sem a chave
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: send phone on join and sign up`
+**Status**: ✅ Done — `soft-go-II@b97995a`
 
 ---
 
