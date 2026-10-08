@@ -123,7 +123,7 @@ T3 → T4 → T5 → T6
 
 **What**: Rota `removeRide` conforme o design inline (`JwtAuthGuard`, `ParseIntPipe`, `204`), com Swagger.
 **Where**: `soft-go-ii-api/src/ride/ride.controller.ts`
-**Also touches**: `src/ride/ride.controller.spec.ts`
+**Also touches**: `src/ride/ride.controller.spec.ts`, `src/auth/auth.controller.spec.ts` (`removeRide: [JwtAuthGuard]` no mapa `EXPECTED_GUARDS`)
 **Depends on**: T1
 **Reuses**: `createRide` (guard + `request.user.id`), `POST /auth/signout` (`@HttpCode(HttpStatus.NO_CONTENT)`), setup HTTP do `ride.controller.spec.ts`
 **Requirement**: DEL-01, DEL-02, DEL-03, DEL-04, DEL-05, DEL-06, DEL-07
@@ -133,7 +133,7 @@ T3 → T4 → T5 → T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes HTTP (repositórios fake):
+- [x] Testes HTTP (repositórios fake):
   - token da dona → `204`, corpo vazio, e `GET /ride` não lista mais a carona;
   - token de outra conta → `403` "Só a dona da carona pode excluí-la", e a carona continua no repositório e no `GET /ride` (L-006);
   - id inexistente → `404` "Carona não encontrada";
@@ -144,12 +144,13 @@ T3 → T4 → T5 → T6
   - token com `ver` antigo (sessão revogada, AD-005) → `401`, nada apagado;
   - `GET /ride` sem token continua `200`;
   - o teste "Nenhum guard global" continua passando (L-001)
-- [ ] Verificação manual no banco local (`npm run start:dev`): `DELETE` com o token da dona numa carona com uma inscrição → `204`, e `SELECT count(*) FROM ride_users WHERE ride_id = <id>` retorna 0. **Pedir confirmação da usuária antes**, porque apaga dados do banco local
-- [ ] Gate build (API) passa (fim da Phase 1). Contagem total da API registrada
+- [x] Verificação manual no banco local (`npm run start:dev`): `DELETE` com o token da dona numa carona com uma inscrição → `204`, e `SELECT count(*) FROM ride_users WHERE ride_id = <id>` retorna 0. **Pedir confirmação da usuária antes**, porque apaga dados do banco local
+- [x] Gate build (API) passa (fim da Phase 1). Contagem total da API registrada
 
 **Tests**: integration
 **Gate**: build
 **Commit**: `feat: add delete ride route`
+**Status**: ✅ Done — `soft-go-ii-api@541c0ca` (API: 167 testes; fim da Phase 1). Checagem manual no banco local com contas de teste novas: passageira → `403` com `ride_users` = 1; dona → `204`, `ride_users` = 0 e `rides` = 0; segundo `DELETE` → `404`
 
 ---
 

@@ -118,13 +118,13 @@ Hoje não existe forma de excluir uma carona publicada por engano ou que não va
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| DEL-01 | P1: API exclui só para a dona | Tasks | Mapped (T1, T2) |
-| DEL-02 | P1: API exclui só para a dona | Tasks | Mapped (T1, T2) |
-| DEL-03 | P1: API exclui só para a dona | Tasks | Mapped (T1, T2) |
-| DEL-04 | P1: API exclui só para a dona | Tasks | Mapped (T1, T2) |
-| DEL-05 | P1: API exclui só para a dona | Tasks | Mapped (T2) |
-| DEL-06 | P1: API exclui só para a dona | Tasks | Mapped (T2) |
-| DEL-07 | P1: API exclui só para a dona | Tasks | Mapped (T2) |
+| DEL-01 | P1: API exclui só para a dona | Execute | Implemented (T1, T2) |
+| DEL-02 | P1: API exclui só para a dona | Execute | Implemented (T1, T2) |
+| DEL-03 | P1: API exclui só para a dona | Execute | Implemented (T1, T2) |
+| DEL-04 | P1: API exclui só para a dona | Execute | Implemented (T1, T2) |
+| DEL-05 | P1: API exclui só para a dona | Execute | Implemented (T2) |
+| DEL-06 | P1: API exclui só para a dona | Execute | Implemented (T2) |
+| DEL-07 | P1: API exclui só para a dona | Execute | Implemented (T2) |
 | DEL-08 | P1: Dona exclui pelo card | Tasks | Mapped (T4, T6) |
 | DEL-09 | P1: Dona exclui pelo card | Tasks | Mapped (T4) |
 | DEL-10 | P1: Dona exclui pelo card | Tasks | Mapped (T5, T6) |
