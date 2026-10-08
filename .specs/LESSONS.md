@@ -50,6 +50,18 @@ Seen once or not yet corroborated. Tracked, not trusted.
 - evidence: JOIN-19 (api/validation)
 - last seen: 2026-10-08T14:31:38Z
 
+### L-007 - Ao atualizar estado parcial (ex.: telefone na sessão), testar também o caminho em que o valor NÃO vem, garantindo que o dado existente não é apagado.
+- signal: `surviving_mutant` · recurrence: 1 feature(s) · scope: `front/state` · harmful: 0
+- features: vou-junto
+- evidence: F17 soft-go-II/src/pages/Home.tsx:61 (front/state)
+- last seen: 2026-10-08T14:42:32Z
+
+### L-008 - Toda regra 'string vazia = ausente' de uma Assumption precisa de um teste HTTP que envie '' e confirme o sucesso.
+- signal: `surviving_mutant` · recurrence: 1 feature(s) · scope: `api/validation` · harmful: 0
+- features: vou-junto
+- evidence: A16 soft-go-ii-api/src/ride-users/dto/create-ride-user.dto.ts:15 (api/validation)
+- last seen: 2026-10-08T14:42:32Z
+
 ## Quarantined (failed when applied - ignore)
 
 A confirmed lesson that recurred alongside failure. Kept for the maintainer to review.

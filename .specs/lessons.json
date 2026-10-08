@@ -3,7 +3,7 @@
   "promote_threshold": 2,
   "window_days": 45,
   "quarantine_threshold": 2,
-  "next_id": 7,
+  "next_id": 9,
   "lessons": [
     {
       "id": "L-001",
@@ -112,6 +112,42 @@
       ],
       "created": "2026-10-08T14:31:38Z",
       "last_seen": "2026-10-08T14:31:38Z"
+    },
+    {
+      "id": "L-007",
+      "key": "surviving_mutant::ao atualizar estado parcial ex telefone na sessao testar tambem o caminho em que o valor nao vem garantindo que o dado existente nao e apagado",
+      "text": "Ao atualizar estado parcial (ex.: telefone na sessão), testar também o caminho em que o valor NÃO vem, garantindo que o dado existente não é apagado.",
+      "signal": "surviving_mutant",
+      "scope": "front/state",
+      "status": "candidate",
+      "features": [
+        "vou-junto"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "F17 soft-go-II/src/pages/Home.tsx:61 (front/state)"
+      ],
+      "created": "2026-10-08T14:42:32Z",
+      "last_seen": "2026-10-08T14:42:32Z"
+    },
+    {
+      "id": "L-008",
+      "key": "surviving_mutant::toda regra string vazia ausente de uma assumption precisa de um teste http que envie e confirme o sucesso",
+      "text": "Toda regra 'string vazia = ausente' de uma Assumption precisa de um teste HTTP que envie '' e confirme o sucesso.",
+      "signal": "surviving_mutant",
+      "scope": "api/validation",
+      "status": "candidate",
+      "features": [
+        "vou-junto"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "A16 soft-go-ii-api/src/ride-users/dto/create-ride-user.dto.ts:15 (api/validation)"
+      ],
+      "created": "2026-10-08T14:42:32Z",
+      "last_seen": "2026-10-08T14:42:32Z"
     }
   ]
 }
