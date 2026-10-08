@@ -174,7 +174,7 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
 | OWNER-01 | P1: Publicar carona logada | Design | Pending |
-| OWNER-02 | P1: Publicar carona logada | Design | Pending |
+| OWNER-02 | P1: Publicar carona logada | Execute | Implementing (T6) |
 | OWNER-03 | P1: Publicar carona logada | Execute | Done (T4) |
 | OWNER-04 | P1: Publicar carona logada | Execute | Done (T4) |
 | OWNER-05 | P1: Publicar carona logada | Design | Pending |
@@ -199,7 +199,7 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | OWNER-24 | P1: Migration da dona | Execute | Done (T1) |
 | OWNER-25 | P1: Publicar carona logada | Design | Pending |
 | OWNER-26 | P1: Publicar carona logada | Execute | Implementing (T2) |
-| OWNER-27 | P1: Publicar carona logada | Design | Pending |
+| OWNER-27 | P1: Publicar carona logada | Execute | Implementing (T6) |
 | OWNER-28 | P1: Publicar carona logada | Execute | Done (T4) |
 | OWNER-29 | P1: Publicar carona logada | Design | Pending |
 | OWNER-30 | P1: Publicar carona logada | Execute | Done (T4) |

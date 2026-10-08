@@ -253,15 +253,16 @@ T9 → T10
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes unit:
+- [x] Testes unit:
   - `createRide` com `phone` → body com `phone`;
   - com `phone: ""` ou sem `phone` → body sem a chave `phone`;
   - o body nunca tem `name` nem `ownerId`
-- [ ] Gate quick (front) passa
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: send ride without owner fields`
+**Status**: ✅ Done — `soft-go-II@12e3fdd` (front: 113 testes; tsc de Card/Modal fecha no T8)
 
 ---
 
