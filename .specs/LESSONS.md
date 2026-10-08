@@ -8,7 +8,11 @@
 
 Corroborated across multiple features. Safe to apply as guidance.
 
-_none_
+### L-004 - ACs de validação devem citar a mensagem exata esperada, para que testes não precisem de regex genérica.
+- signal: `spec_precision_gap` · recurrence: 2 feature(s) · scope: `spec` · harmful: 0
+- features: auth, save-rideowner
+- evidence: AUTH-07 (spec) (+1 more)
+- last seen: 2026-10-08T17:14:32Z
 
 ## Candidates (under observation - do NOT load as guidance yet)
 
@@ -30,12 +34,6 @@ Seen once or not yet corroborated. Tracked, not trusted.
 - signal: `surviving_mutant` · recurrence: 1 feature(s) · scope: `front/forms` · harmful: 0
 - features: auth
 - evidence: F10 soft-go-II/src/pages/SignUp.tsx:75 (front/forms)
-- last seen: 2026-10-07T21:31:06Z
-
-### L-004 - ACs de validação devem citar a mensagem exata esperada, para que testes não precisem de regex genérica.
-- signal: `spec_precision_gap` · recurrence: 1 feature(s) · scope: `spec` · harmful: 0
-- features: auth
-- evidence: AUTH-07 (spec)
 - last seen: 2026-10-07T21:31:06Z
 
 ### L-005 - Quando um AC lista o que uma tela mostra (ex.: resumo da carona), testar cada elemento listado, não só a ausência dos campos removidos.

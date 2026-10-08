@@ -10,7 +10,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 **Design**: `.specs/features/save-rideowner/design.md`
 **Spec**: `.specs/features/save-rideowner/spec.md` · **Context**: `.specs/features/save-rideowner/context.md`
-**Status**: In Progress
+**Status**: Done (2026-10-08) — T1–T10 concluídas; Verifier PASS na iteração 1 (`validation.md`)
 
 **Repositórios**:
 - T1–T5 commitam em `soft-go-ii-api/` (`master`). T6–T10 commitam em `soft-go-II/` (`main`).

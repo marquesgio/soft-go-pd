@@ -19,10 +19,11 @@
 - **Status**: active
 
 ### AD-003
-- **Decision**: Rotas públicas que personalizam a resposta para quem está logada usam `OptionalJwtAuthGuard`, aplicado por rota. Token válido preenche `request.user`; ausente ou inválido segue como anônima, sem 401. `POST /ride-users` passa a exigir `JwtAuthGuard`, o que substitui o AUTH-23 nessa rota (`GET /ride`, `POST /ride` e `GET /transport-type` seguem sem exigir token).
+- **Decision**: Rotas públicas que personalizam a resposta para quem está logada usam `OptionalJwtAuthGuard`, aplicado por rota. Token válido preenche `request.user`; ausente ou inválido segue como anônima, sem 401. Toda rota que grava dados ligados a uma usuária exige `JwtAuthGuard`: `POST /ride-users` (vou-junto) e `POST /ride` (save-rideowner, a dona vem do token). Isso substitui o AUTH-23 nessas rotas. `GET /ride` e `GET /transport-type` seguem sem exigir token.
 - **Reason**: O mural continua público, e dados pessoais (telefones de participantes) só aparecem para quem está logada. Inscrição precisa de dona para impedir duplicidade (feature vou-junto).
 - **Trade-off**: Um token adulterado não é sinalizado nessas rotas: só o `/auth/me` do front derruba a sessão. É mais uma classe de guard para manter.
-- **Scope**: `soft-go-ii-api` (`RideController` leituras, `RideUsersController.create`, futuras rotas públicas personalizadas).
+- **Scope**: `soft-go-ii-api` (`RideController` leituras e `createRide`, `RideUsersController.create`, futuras rotas públicas personalizadas).
+- **Updated**: 2026-10-08 (save-rideowner: `POST /ride` passa a exigir token)
 - **Date**: 2026-10-07
 - **Status**: active
 
@@ -36,12 +37,12 @@
 
 ## Handoff
 
-- **Feature**: vou-junto (`.specs/features/vou-junto/`) — **concluída**. A feature auth também está concluída
-- **Phase / Task**: Execute concluído (T1–T16); Verifier PASS na iteração 3 (`validation.md`: 28/28 ACs, sensor 12/12)
-- **Completed**: T1–T16 + correções de teste do Verifier (iterações 1–2). API: 96 testes; front: 109 testes. Migrations aplicadas no banco local (inscrições antigas apagadas com consentimento)
+- **Feature**: save-rideowner (`.specs/features/save-rideowner/`) — **concluída**. As features auth e vou-junto também estão concluídas
+- **Phase / Task**: Execute concluído (T1–T10); Verifier PASS na iteração 1 (`validation.md`: 30/30 ACs, sensor 15/15)
+- **Completed**: T1–T10. API: 121 testes; front: 136 testes. Migration `AddOwnerToRides` aplicada no banco local (caronas e inscrições antigas apagadas com consentimento)
 - **In-progress** (file:line): none
-- **Next step**: Nenhum na feature. Pendente da usuária: decidir quando publicar (`git push` da API, do front e depois da raiz; nada foi enviado ao GitHub). Ideias adiadas em `vou-junto/context.md` → Deferred Ideas.
+- **Next step**: Nenhum na feature. Pendente da usuária: decidir quando publicar (`git push` da API, do front e depois da raiz; nada foi enviado ao GitHub)
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Deploy note**: `POST /ride-users` mudou de contrato (sem `name`, exige Bearer). API e front precisam subir juntos.
+- **Deploy note**: `POST /ride` mudou de contrato (exige Bearer; sem `name`; `phone` grava na conta) e `GET /ride` troca `name`/`phone` por `owner`. A migration apaga todas as caronas. API e front precisam subir juntos

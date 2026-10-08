@@ -1,7 +1,7 @@
 # Dona da Carona Specification
 
 **PRD**: `prds/save-rideowner.md`
-**Status**: Approved (2026-10-08)
+**Status**: Done (2026-10-08). Verifier PASS (`validation.md`)
 
 ## Problem Statement
 
@@ -173,38 +173,38 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| OWNER-01 | P1: Publicar carona logada | Execute | Done (T9) |
-| OWNER-02 | P1: Publicar carona logada | Execute | Done (T9) |
-| OWNER-03 | P1: Publicar carona logada | Execute | Done (T4) |
-| OWNER-04 | P1: Publicar carona logada | Execute | Done (T4) |
-| OWNER-05 | P1: Publicar carona logada | Execute | Done (T9) |
-| OWNER-06 | P1: Só quem está logada publica | Execute | Done (T4) |
-| OWNER-07 | P1: Só quem está logada publica | Execute | Done (T4) |
-| OWNER-08 | P1: Só quem está logada publica | Execute | Done (T4) |
-| OWNER-09 | P1: Só quem está logada publica | Execute | Done (T10) |
-| OWNER-10 | P1: Só quem está logada publica | Execute | Done (T7) |
-| OWNER-11 | P1: Mural mostra a dona | Execute | Done (T3) |
-| OWNER-12 | P1: Mural mostra a dona | Execute | Done (T4) |
-| OWNER-13 | P1: Mural mostra a dona | Execute | Done (T4) |
-| OWNER-14 | P1: Mural mostra a dona | Execute | Done (T3) |
-| OWNER-15 | P1: Mural mostra a dona | Execute | Done (T8) |
-| OWNER-16 | P1: Mural mostra a dona | Execute | Done (T8) |
-| OWNER-17 | P1: Mural mostra a dona | Execute | Done (T8) |
-| OWNER-18 | P1: Mural mostra a dona | Execute | Done (T8) |
-| OWNER-19 | P2: Dona não se inscreve na própria carona | Execute | Done (T10) |
-| OWNER-20 | P2: Dona não se inscreve na própria carona | Execute | Done (T5) |
-| OWNER-21 | P1: Migration da dona | Execute | Done (T1) |
-| OWNER-22 | P1: Migration da dona | Execute | Done (T1) |
-| OWNER-23 | P1: Migration da dona | Execute | Done (T1) |
-| OWNER-24 | P1: Migration da dona | Execute | Done (T1) |
-| OWNER-25 | P1: Publicar carona logada | Execute | Done (T9) |
-| OWNER-26 | P1: Publicar carona logada | Execute | Done (T9) |
-| OWNER-27 | P1: Publicar carona logada | Execute | Done (T9) |
-| OWNER-28 | P1: Publicar carona logada | Execute | Done (T4) |
-| OWNER-29 | P1: Publicar carona logada | Execute | Done (T9) |
-| OWNER-30 | P1: Publicar carona logada | Execute | Done (T4) |
+| OWNER-01 | P1: Publicar carona logada | Execute | Verified (T9) |
+| OWNER-02 | P1: Publicar carona logada | Execute | Verified (T9) |
+| OWNER-03 | P1: Publicar carona logada | Execute | Verified (T4) |
+| OWNER-04 | P1: Publicar carona logada | Execute | Verified (T4) |
+| OWNER-05 | P1: Publicar carona logada | Execute | Verified (T9) |
+| OWNER-06 | P1: Só quem está logada publica | Execute | Verified (T4) |
+| OWNER-07 | P1: Só quem está logada publica | Execute | Verified (T4) |
+| OWNER-08 | P1: Só quem está logada publica | Execute | Verified (T4) |
+| OWNER-09 | P1: Só quem está logada publica | Execute | Verified (T10) |
+| OWNER-10 | P1: Só quem está logada publica | Execute | Verified (T7) |
+| OWNER-11 | P1: Mural mostra a dona | Execute | Verified (T3) |
+| OWNER-12 | P1: Mural mostra a dona | Execute | Verified (T4) |
+| OWNER-13 | P1: Mural mostra a dona | Execute | Verified (T4) |
+| OWNER-14 | P1: Mural mostra a dona | Execute | Verified (T3) |
+| OWNER-15 | P1: Mural mostra a dona | Execute | Verified (T8) |
+| OWNER-16 | P1: Mural mostra a dona | Execute | Verified (T8) |
+| OWNER-17 | P1: Mural mostra a dona | Execute | Verified (T8) |
+| OWNER-18 | P1: Mural mostra a dona | Execute | Verified (T8) |
+| OWNER-19 | P2: Dona não se inscreve na própria carona | Execute | Verified (T10) |
+| OWNER-20 | P2: Dona não se inscreve na própria carona | Execute | Verified (T5) |
+| OWNER-21 | P1: Migration da dona | Execute | Verified (T1) |
+| OWNER-22 | P1: Migration da dona | Execute | Verified (T1) |
+| OWNER-23 | P1: Migration da dona | Execute | Verified (T1) |
+| OWNER-24 | P1: Migration da dona | Execute | Verified (T1) |
+| OWNER-25 | P1: Publicar carona logada | Execute | Verified (T9) |
+| OWNER-26 | P1: Publicar carona logada | Execute | Verified (T9) |
+| OWNER-27 | P1: Publicar carona logada | Execute | Verified (T9) |
+| OWNER-28 | P1: Publicar carona logada | Execute | Verified (T4) |
+| OWNER-29 | P1: Publicar carona logada | Execute | Verified (T9) |
+| OWNER-30 | P1: Publicar carona logada | Execute | Verified (T4) |
 
-**Coverage:** 30 total, 0 mapped to tasks, 30 unmapped ⚠️
+**Coverage:** 30 total, 30 mapped to tasks, 0 unmapped
 
 ---
 
