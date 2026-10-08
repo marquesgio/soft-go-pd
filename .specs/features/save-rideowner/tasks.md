@@ -190,7 +190,7 @@ T9 → T10
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes HTTP (repositórios fake):
+- [x] Testes HTTP (repositórios fake):
   - token válido + body válido → `201`, carona gravada com `ownerId` do token;
   - body com `name` → `400`; com `ownerId` → `400`. Nos dois, nada gravado;
   - sem `Authorization` → `401` "Não autenticado", nada gravado;
@@ -201,11 +201,12 @@ T9 → T10
   - `phone` inválido (`"123"`) → `400`, nada gravado, e `users.phone` não muda;
   - `GET /ride` com token → `owner.phone`; sem token → `owner` sem `phone`;
   - o teste "Nenhum guard global" continua passando (L-001)
-- [ ] Gate build (API) passa
+- [x] Gate build (API) passa
 
 **Tests**: integration
 **Gate**: build
 **Commit**: `feat: require login to publish rides`
+**Status**: ✅ Done — `soft-go-ii-api@4d5ba30` (API: 118 testes)
 
 ---
 

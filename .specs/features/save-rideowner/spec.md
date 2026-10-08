@@ -175,17 +175,17 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | -------------- | ----- | ----- | ------ |
 | OWNER-01 | P1: Publicar carona logada | Design | Pending |
 | OWNER-02 | P1: Publicar carona logada | Design | Pending |
-| OWNER-03 | P1: Publicar carona logada | Execute | Implementing (T2) |
-| OWNER-04 | P1: Publicar carona logada | Design | Pending |
+| OWNER-03 | P1: Publicar carona logada | Execute | Done (T4) |
+| OWNER-04 | P1: Publicar carona logada | Execute | Done (T4) |
 | OWNER-05 | P1: Publicar carona logada | Design | Pending |
-| OWNER-06 | P1: Só quem está logada publica | Design | Pending |
-| OWNER-07 | P1: Só quem está logada publica | Design | Pending |
-| OWNER-08 | P1: Só quem está logada publica | Execute | Implementing (T2) |
+| OWNER-06 | P1: Só quem está logada publica | Execute | Done (T4) |
+| OWNER-07 | P1: Só quem está logada publica | Execute | Done (T4) |
+| OWNER-08 | P1: Só quem está logada publica | Execute | Done (T4) |
 | OWNER-09 | P1: Só quem está logada publica | Design | Pending |
 | OWNER-10 | P1: Só quem está logada publica | Design | Pending |
 | OWNER-11 | P1: Mural mostra a dona | Execute | Done (T3) |
-| OWNER-12 | P1: Mural mostra a dona | Execute | Implementing (T3) |
-| OWNER-13 | P1: Mural mostra a dona | Execute | Implementing (T3) |
+| OWNER-12 | P1: Mural mostra a dona | Execute | Done (T4) |
+| OWNER-13 | P1: Mural mostra a dona | Execute | Done (T4) |
 | OWNER-14 | P1: Mural mostra a dona | Execute | Done (T3) |
 | OWNER-15 | P1: Mural mostra a dona | Design | Pending |
 | OWNER-16 | P1: Mural mostra a dona | Design | Pending |
@@ -200,9 +200,9 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | OWNER-25 | P1: Publicar carona logada | Design | Pending |
 | OWNER-26 | P1: Publicar carona logada | Execute | Implementing (T2) |
 | OWNER-27 | P1: Publicar carona logada | Design | Pending |
-| OWNER-28 | P1: Publicar carona logada | Execute | Implementing (T2) |
+| OWNER-28 | P1: Publicar carona logada | Execute | Done (T4) |
 | OWNER-29 | P1: Publicar carona logada | Design | Pending |
-| OWNER-30 | P1: Publicar carona logada | Design | Pending |
+| OWNER-30 | P1: Publicar carona logada | Execute | Done (T4) |
 
 **Coverage:** 30 total, 0 mapped to tasks, 30 unmapped ⚠️
 
