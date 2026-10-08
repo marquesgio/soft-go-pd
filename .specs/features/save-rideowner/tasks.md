@@ -345,7 +345,7 @@ No `Modal`, o `Pick` usa `owner`.
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes (serviços mockados, `MemoryRouter` + `AuthProvider`):
+- [x] Testes (serviços mockados, `MemoryRouter` + `AuthProvider`):
   - logada com telefone → sem "Seu Nome" e sem "WhatsApp";
   - logada sem telefone → "WhatsApp" aparece e "Seu Nome" não;
   - envio válido → `createRide` chamado sem `name`, com `transportType` numérico; toast de sucesso; vai para `/`;
@@ -354,11 +354,12 @@ No `Modal`, o `Pick` usa `owner`.
   - WhatsApp `123` → "Número inválido, informe 11 dígitos (DDD + número)" e `createRide` não chamado;
   - erro de validação de cada campo obrigatório (data, hora, cidade, transporte) com a mensagem exata (L-003);
   - falha da API → toast "Não foi possível cadastrar a corrida. Tente novamente."
-- [ ] Gate quick (front) passa
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: publish rides as the logged user`
+**Status**: ✅ Done — `soft-go-II@5dbe9d1` (front: 133 testes)
 
 ---
 

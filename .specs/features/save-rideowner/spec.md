@@ -173,11 +173,11 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| OWNER-01 | P1: Publicar carona logada | Design | Pending |
-| OWNER-02 | P1: Publicar carona logada | Execute | Implementing (T6) |
+| OWNER-01 | P1: Publicar carona logada | Execute | Done (T9) |
+| OWNER-02 | P1: Publicar carona logada | Execute | Done (T9) |
 | OWNER-03 | P1: Publicar carona logada | Execute | Done (T4) |
 | OWNER-04 | P1: Publicar carona logada | Execute | Done (T4) |
-| OWNER-05 | P1: Publicar carona logada | Design | Pending |
+| OWNER-05 | P1: Publicar carona logada | Execute | Done (T9) |
 | OWNER-06 | P1: Só quem está logada publica | Execute | Done (T4) |
 | OWNER-07 | P1: Só quem está logada publica | Execute | Done (T4) |
 | OWNER-08 | P1: Só quem está logada publica | Execute | Done (T4) |
@@ -197,11 +197,11 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | OWNER-22 | P1: Migration da dona | Execute | Done (T1) |
 | OWNER-23 | P1: Migration da dona | Execute | Done (T1) |
 | OWNER-24 | P1: Migration da dona | Execute | Done (T1) |
-| OWNER-25 | P1: Publicar carona logada | Design | Pending |
-| OWNER-26 | P1: Publicar carona logada | Execute | Implementing (T2) |
-| OWNER-27 | P1: Publicar carona logada | Execute | Implementing (T6) |
+| OWNER-25 | P1: Publicar carona logada | Execute | Done (T9) |
+| OWNER-26 | P1: Publicar carona logada | Execute | Done (T9) |
+| OWNER-27 | P1: Publicar carona logada | Execute | Done (T9) |
 | OWNER-28 | P1: Publicar carona logada | Execute | Done (T4) |
-| OWNER-29 | P1: Publicar carona logada | Design | Pending |
+| OWNER-29 | P1: Publicar carona logada | Execute | Done (T9) |
 | OWNER-30 | P1: Publicar carona logada | Execute | Done (T4) |
 
 **Coverage:** 30 total, 0 mapped to tasks, 30 unmapped ⚠️
