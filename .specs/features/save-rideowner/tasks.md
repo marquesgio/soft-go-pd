@@ -310,18 +310,19 @@ No `Modal`, o `Pick` usa `owner`.
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes (L-005):
+- [x] Testes (L-005):
   - nome completo e inicial da dona;
   - logada + `owner.phone` → link `https://wa.me/<phone>`;
   - deslogada → sem "WhatsApp";
   - `owner.phone: null` → sem "WhatsApp";
   - dona → "Sua carona" e sem "Vou junto" (também com a carona lotada e com vagas);
   - outra usuária → "Vou junto"
-- [ ] Gate build (front) passa (fim da Phase 2)
+- [x] Gate build (front) passa (fim da Phase 2)
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: show ride owner on card`
+**Status**: ✅ Done — `soft-go-II@fd04b4c` (front: 122 testes; fim da Phase 2)
 
 ---
 
