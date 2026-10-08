@@ -41,7 +41,7 @@
 - **Phase / Task**: Execute concluído (T1–T10); Verifier PASS na iteração 1 (`validation.md`: 30/30 ACs, sensor 15/15)
 - **Completed**: T1–T10 + correções pós-teste da usuária (vagas contadas a partir de `spotsRide` da carona; rótulo "Vou para a Soft"; inscrita num dia não publica carona nesse dia (409); "Vou junto" em ônibus). API: 130 testes; front: 140 testes. Migration `AddOwnerToRides` aplicada no banco local (caronas e inscrições antigas apagadas com consentimento)
 - **In-progress** (file:line): none
-- **Next step**: Nenhum na feature. Pendente da usuária: decidir quando publicar (`git push` da API, do front e depois da raiz; nada foi enviado ao GitHub)
+- **Next step**: Nenhum. API, front e raiz enviados ao GitHub em 2026-10-08 (API `64cdad0`, front `4dfcc68`)
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`
