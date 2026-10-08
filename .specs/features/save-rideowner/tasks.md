@@ -224,14 +224,15 @@ T9 → T10
 - Skill: NONE
 
 **Done when**:
-- [ ] Unit: dona → `409` com a mensagem exata, `save` não chamado e `users.update` não chamado (mesmo com `phone`)
-- [ ] Unit: outra usuária na mesma carona → inscrição criada
-- [ ] HTTP: `POST /ride-users` com o token da dona → `409` com a mensagem exata, `ride_users` sem registro novo
-- [ ] Gate build (API) passa (fim da Phase 1). Contagem total da API registrada
+- [x] Unit: dona → `409` com a mensagem exata, `save` não chamado e `users.update` não chamado (mesmo com `phone`)
+- [x] Unit: outra usuária na mesma carona → inscrição criada
+- [x] HTTP: `POST /ride-users` com o token da dona → `409` com a mensagem exata, `ride_users` sem registro novo
+- [x] Gate build (API) passa (fim da Phase 1). Contagem total da API registrada
 
 **Tests**: integration
 **Gate**: build
 **Commit**: `feat: block owners from joining their own ride`
+**Status**: ✅ Done — `soft-go-ii-api@9589b43` (API: 121 testes; fim da Phase 1)
 
 ---
 

@@ -192,7 +192,7 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | OWNER-17 | P1: Mural mostra a dona | Design | Pending |
 | OWNER-18 | P1: Mural mostra a dona | Design | Pending |
 | OWNER-19 | P2: Dona não se inscreve na própria carona | Design | Pending |
-| OWNER-20 | P2: Dona não se inscreve na própria carona | Design | Pending |
+| OWNER-20 | P2: Dona não se inscreve na própria carona | Execute | Done (T5) |
 | OWNER-21 | P1: Migration da dona | Execute | Done (T1) |
 | OWNER-22 | P1: Migration da dona | Execute | Done (T1) |
 | OWNER-23 | P1: Migration da dona | Execute | Done (T1) |
