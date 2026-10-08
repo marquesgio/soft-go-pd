@@ -192,17 +192,18 @@ T3 → T4 → T5 → T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes:
+- [x] Testes:
   - dona → botão "Excluir carona" visível; clique chama `onDeleteRide` uma vez;
   - dona com carona de ônibus (`spots: null`) e com carona lotada → botão visível;
   - outra usuária logada → sem "Excluir carona";
   - deslogada (`currentUserId` indefinido) → sem "Excluir carona";
   - `showButton={false}` (uso no modal) → sem "Excluir carona"
-- [ ] Gate quick (front) passa
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: show delete button to ride owner`
+**Status**: ✅ Done — `soft-go-II@feb946a` (front: 153 testes)
 
 ---
 

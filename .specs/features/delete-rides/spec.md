@@ -126,7 +126,7 @@ Hoje não existe forma de excluir uma carona publicada por engano ou que não va
 | DEL-06 | P1: API exclui só para a dona | Execute | Implemented (T2) |
 | DEL-07 | P1: API exclui só para a dona | Execute | Implemented (T2) |
 | DEL-08 | P1: Dona exclui pelo card | Tasks | Mapped (T4, T6) |
-| DEL-09 | P1: Dona exclui pelo card | Tasks | Mapped (T4) |
+| DEL-09 | P1: Dona exclui pelo card | Execute | Implemented (T4) |
 | DEL-10 | P1: Dona exclui pelo card | Tasks | Mapped (T5, T6) |
 | DEL-11 | P1: Dona exclui pelo card | Tasks | Mapped (T5) |
 | DEL-12 | P1: Dona exclui pelo card | Tasks | Mapped (T5) |
