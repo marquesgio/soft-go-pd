@@ -37,10 +37,10 @@
 ## Handoff
 
 - **Feature**: vou-junto (`.specs/features/vou-junto/`). A feature auth está concluída
-- **Phase / Task**: Phase 1 concluída (T1–T4); próxima: Phase 2 / T5
-- **Completed**: T1–T4 (migrations aplicadas no banco local: `users.phone` e `LinkRideUsersToUsers`, inscrições antigas apagadas com o "sim" da usuária)
+- **Phase / Task**: Phase 2 concluída (T5–T8); próxima: Phase 3 / T9
+- **Completed**: T1–T8, API completa com 95 testes (migrations aplicadas no banco local: `users.phone` e `LinkRideUsersToUsers`, inscrições antigas apagadas com o "sim" da usuária)
 - **In-progress** (file:line): none
-- **Next step**: T5 (`RideUsersService.join`). Execução inline, pausando ao fim de cada fase; commits direto em `master`/`main`.
+- **Next step**: T9 (tipos + sessão tolerante a `phone` em `soft-go-II`). Execução inline, pausando ao fim de cada fase; commits direto em `master`/`main`.
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`

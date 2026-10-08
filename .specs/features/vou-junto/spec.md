@@ -177,7 +177,7 @@ O modal "Quero ir junto!" pede nome e telefone a cada inscrição, mesmo agora q
 | JOIN-06 | P1: Confirmar presença logada | Tasks | Pending |
 | JOIN-07 | P1: Só logada confirma | Execute | Done (T6) |
 | JOIN-08 | P1: Só logada confirma | Tasks | Pending |
-| JOIN-09 | P1: Só logada confirma | Tasks | Pending |
+| JOIN-09 | P1: Só logada confirma | Execute | Done (T8) |
 | JOIN-10 | P1: Sem duplicidade | Tasks | Pending |
 | JOIN-11 | P1: Sem duplicidade | Execute | Done (T5) |
 | JOIN-12 | P1: Sem duplicidade | Tasks | Pending |
@@ -189,8 +189,8 @@ O modal "Quero ir junto!" pede nome e telefone a cada inscrição, mesmo agora q
 | JOIN-18 | P1: Telefone na conta | Tasks | Pending |
 | JOIN-19 | P1: Telefone na conta | Execute | Done (T6) |
 | JOIN-20 | P1: Participantes no card | Execute | Done (T7) |
-| JOIN-21 | P1: Participantes no card | Tasks | Pending |
-| JOIN-22 | P1: Participantes no card | Tasks | Pending |
+| JOIN-21 | P1: Participantes no card | Execute | Done (T8) |
+| JOIN-22 | P1: Participantes no card | Execute | Done (T8) |
 | JOIN-23 | P1: Participantes no card | Tasks | Pending |
 | JOIN-24 | P1: Participantes no card | Tasks | Pending |
 | JOIN-25 | P1: Participantes no card | Execute | Done (T7) |

@@ -317,13 +317,14 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] HTTP (repos fake): `GET /ride` sem token → 200 e nenhum `phone` em `participants`. Com token válido → 200 com `phone`. Token inválido → 200 sem `phone` (não 401). O mesmo vale para `GET /ride/:id`. `POST /ride` sem token continua 201 ou 400 por validação, nunca 401
-- [ ] Subir a API compilada contra o Postgres local e fazer um smoke: `GET /ride` 200, `POST /ride-users` sem token 401
-- [ ] Gate build (API) passa (fim da Phase 2)
+- [x] HTTP (repos fake): `GET /ride` sem token → 200 e nenhum `phone` em `participants`. Com token válido → 200 com `phone`. Token inválido → 200 sem `phone` (não 401). O mesmo vale para `GET /ride/:id`. `POST /ride` sem token continua 201 ou 400 por validação, nunca 401
+- [x] Subir a API compilada contra o Postgres local e fazer um smoke: `GET /ride` 200, `POST /ride-users` sem token 401
+- [x] Gate build (API) passa (fim da Phase 2)
 
 **Tests**: integration
 **Gate**: build
 **Commit**: `feat: show participant phones to logged users`
+**Status**: ✅ Done — `soft-go-ii-api@b10541a (API: 95 testes)`
 
 ---
 
