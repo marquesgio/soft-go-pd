@@ -39,7 +39,7 @@
 
 - **Feature**: save-rideowner (`.specs/features/save-rideowner/`) — **concluída**. As features auth e vou-junto também estão concluídas
 - **Phase / Task**: Execute concluído (T1–T10); Verifier PASS na iteração 1 (`validation.md`: 30/30 ACs, sensor 15/15)
-- **Completed**: T1–T10 + correções pós-teste da usuária (vagas contadas a partir de `spotsRide` da carona; rótulo "Vou para a Soft"). API: 126 testes; front: 136 testes. Migration `AddOwnerToRides` aplicada no banco local (caronas e inscrições antigas apagadas com consentimento)
+- **Completed**: T1–T10 + correções pós-teste da usuária (vagas contadas a partir de `spotsRide` da carona; rótulo "Vou para a Soft"; inscrita num dia não publica carona nesse dia (409); "Vou junto" em ônibus). API: 130 testes; front: 140 testes. Migration `AddOwnerToRides` aplicada no banco local (caronas e inscrições antigas apagadas com consentimento)
 - **In-progress** (file:line): none
 - **Next step**: Nenhum na feature. Pendente da usuária: decidir quando publicar (`git push` da API, do front e depois da raiz; nada foi enviado ao GitHub)
 - **Blockers**: none
