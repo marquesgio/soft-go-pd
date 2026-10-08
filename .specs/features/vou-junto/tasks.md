@@ -535,18 +535,19 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes (serviços mockados, `MemoryRouter` + `AuthProvider`):
+- [x] Testes (serviços mockados, `MemoryRouter` + `AuthProvider`):
   - deslogada clica "Vou junto" → `/login`, sem modal;
   - logada com telefone → modal sem campo; confirmar chama `createRideUser({ rideId })`, mostra "Presença confirmada!" e recarrega;
   - logada sem telefone → modal com campo; com o número, sessão com `phone` e próximo modal sem campo;
   - 409 → toast com a mensagem da API;
   - 401 → nenhum toast de sucesso;
   - logada → card recebe telefones; deslogada → não recebe.
-- [ ] Gate build (front) passa (fim da Phase 4). Contagem total do front registrada
+- [x] Gate build (front) passa (fim da Phase 4). Contagem total do front registrada
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: join rides with the logged user`
+**Status**: ✅ Done — `soft-go-II@226bf5a (front: 108 testes)`
 
 ---
 

@@ -169,33 +169,33 @@ O modal "Quero ir junto!" pede nome e telefone a cada inscrição, mesmo agora q
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| JOIN-01 | P1: Confirmar presença logada | Tasks | Pending |
-| JOIN-02 | P1: Confirmar presença logada | Tasks | Pending |
+| JOIN-01 | P1: Confirmar presença logada | Execute | Done (T16) |
+| JOIN-02 | P1: Confirmar presença logada | Execute | Done (T16) |
 | JOIN-03 | P1: Confirmar presença logada | Execute | Done (T6) |
 | JOIN-04 | P1: Confirmar presença logada | Execute | Done (T6) |
-| JOIN-05 | P1: Confirmar presença logada | Tasks | Pending |
-| JOIN-06 | P1: Confirmar presença logada | Tasks | Pending |
+| JOIN-05 | P1: Confirmar presença logada | Execute | Done (T16) |
+| JOIN-06 | P1: Confirmar presença logada | Execute | Done (T16) |
 | JOIN-07 | P1: Só logada confirma | Execute | Done (T6) |
-| JOIN-08 | P1: Só logada confirma | Tasks | Pending |
+| JOIN-08 | P1: Só logada confirma | Execute | Done (T16) |
 | JOIN-09 | P1: Só logada confirma | Execute | Done (T8) |
-| JOIN-10 | P1: Sem duplicidade | Tasks | Pending |
+| JOIN-10 | P1: Sem duplicidade | Execute | Done (T16) |
 | JOIN-11 | P1: Sem duplicidade | Execute | Done (T5) |
-| JOIN-12 | P1: Sem duplicidade | Tasks | Pending |
+| JOIN-12 | P1: Sem duplicidade | Execute | Done (T16) |
 | JOIN-13 | P1: Telefone na conta | Execute | Done (T13) |
 | JOIN-14 | P1: Telefone na conta | Execute | Done (T3) |
 | JOIN-15 | P1: Telefone na conta | Execute | Done (T9) |
-| JOIN-16 | P1: Telefone na conta | Tasks | Pending |
-| JOIN-17 | P1: Telefone na conta | Tasks | Pending |
+| JOIN-16 | P1: Telefone na conta | Execute | Done (T16) |
+| JOIN-17 | P1: Telefone na conta | Execute | Done (T16) |
 | JOIN-18 | P1: Telefone na conta | Execute | Done (T15) |
 | JOIN-19 | P1: Telefone na conta | Execute | Done (T6) |
 | JOIN-20 | P1: Participantes no card | Execute | Done (T7) |
 | JOIN-21 | P1: Participantes no card | Execute | Done (T8) |
 | JOIN-22 | P1: Participantes no card | Execute | Done (T8) |
 | JOIN-23 | P1: Participantes no card | Execute | Done (T14) |
-| JOIN-24 | P1: Participantes no card | Tasks | Pending |
+| JOIN-24 | P1: Participantes no card | Execute | Done (T16) |
 | JOIN-25 | P1: Participantes no card | Execute | Done (T7) |
 | JOIN-26 | Edge | Execute | Done (T5) |
-| JOIN-27 | Edge | Tasks | Pending |
+| JOIN-27 | Edge | Execute | Done (T16) |
 | JOIN-28 | Edge | Execute | Done (T2) |
 
 **Coverage:** 28 total, 28 mapped to tasks (ver `tasks.md` → Requirement Coverage), 0 unmapped
