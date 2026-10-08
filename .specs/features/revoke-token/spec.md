@@ -1,7 +1,7 @@
 # Revogar Sessões ao Sair Specification
 
 **PRD**: `prds/revoke-token.md`
-**Status**: Approved (2026-10-08)
+**Status**: Done (2026-10-08). Verifier PASS na iteração 2 (`validation.md`)
 
 ## Problem Statement
 
@@ -140,24 +140,24 @@ O "Sair" só apaga o token do navegador. A API aceita qualquer token com assinat
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| REVOKE-01 | P1: Sair invalida os tokens da conta | Execute | Done (T4) |
-| REVOKE-02 | P1: Sair invalida os tokens da conta | Execute | Done (T4) |
-| REVOKE-03 | P1: Sair invalida os tokens da conta | Execute | Done (T5) |
-| REVOKE-04 | P1: Sair invalida os tokens da conta | Execute | Done (T5) |
-| REVOKE-05 | P1: A API só aceita a versão atual | Execute | Done (T2) |
-| REVOKE-06 | P1: A API só aceita a versão atual | Execute | Done (T4) |
-| REVOKE-07 | P1: A API só aceita a versão atual | Execute | Done (T3) |
-| REVOKE-08 | P1: A API só aceita a versão atual | Execute | Done (T3) |
-| REVOKE-09 | P1: A API só aceita a versão atual | Execute | Done (T4) |
-| REVOKE-10 | P1: A API só aceita a versão atual | Execute | Done (T3) |
-| REVOKE-11 | P1: Entrar de novo e outras contas | Execute | Done (T4) |
-| REVOKE-12 | P1: Entrar de novo e outras contas | Execute | Done (T4) |
-| REVOKE-13 | P1: Entrar de novo e outras contas | Execute | Done (T4) |
-| REVOKE-14 | P1: Migration da versão | Execute | Done (T1) |
-| REVOKE-15 | P1: Migration da versão | Execute | Done (T1) |
-| REVOKE-16 | P1: Migration da versão | Execute | Done (T2) |
+| REVOKE-01 | P1: Sair invalida os tokens da conta | Execute | Verified (T4) |
+| REVOKE-02 | P1: Sair invalida os tokens da conta | Execute | Verified (T4) |
+| REVOKE-03 | P1: Sair invalida os tokens da conta | Execute | Verified (T5) |
+| REVOKE-04 | P1: Sair invalida os tokens da conta | Execute | Verified (T5) |
+| REVOKE-05 | P1: A API só aceita a versão atual | Execute | Verified (T2) |
+| REVOKE-06 | P1: A API só aceita a versão atual | Execute | Verified (T4) |
+| REVOKE-07 | P1: A API só aceita a versão atual | Execute | Verified (T3) |
+| REVOKE-08 | P1: A API só aceita a versão atual | Execute | Verified (T3) |
+| REVOKE-09 | P1: A API só aceita a versão atual | Execute | Verified (T4) |
+| REVOKE-10 | P1: A API só aceita a versão atual | Execute | Verified (T3) |
+| REVOKE-11 | P1: Entrar de novo e outras contas | Execute | Verified (T4) |
+| REVOKE-12 | P1: Entrar de novo e outras contas | Execute | Verified (T4) |
+| REVOKE-13 | P1: Entrar de novo e outras contas | Execute | Verified (T4) |
+| REVOKE-14 | P1: Migration da versão | Execute | Verified (T1) |
+| REVOKE-15 | P1: Migration da versão | Execute | Verified (T1) |
+| REVOKE-16 | P1: Migration da versão | Execute | Verified (T2) |
 
-**Coverage:** 16 total, 0 mapped to tasks, 16 unmapped ⚠️
+**Coverage:** 16 total, 16 mapped to tasks, 0 unmapped
 
 ---
 

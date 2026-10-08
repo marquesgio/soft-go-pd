@@ -10,7 +10,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 **Design**: `.specs/features/revoke-token/design.md`
 **Spec**: `.specs/features/revoke-token/spec.md`
-**Status**: In Progress
+**Status**: Done (2026-10-08) — T1–T5 concluídas; Verifier PASS na iteração 2 (`validation.md`)
 
 **Repositórios**:
 - T1–T4 commitam em `soft-go-ii-api/` (`master`). T5 commita em `soft-go-II/` (`main`).

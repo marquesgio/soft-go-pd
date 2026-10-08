@@ -45,12 +45,12 @@
 
 ## Handoff
 
-- **Feature**: save-rideowner (`.specs/features/save-rideowner/`) — **concluída**. As features auth e vou-junto também estão concluídas
-- **Phase / Task**: Execute concluído (T1–T10); Verifier PASS na iteração 1 (`validation.md`: 30/30 ACs, sensor 15/15)
-- **Completed**: T1–T10 + correções pós-teste da usuária (vagas contadas a partir de `spotsRide` da carona; rótulo "Vou para a Soft"; inscrita num dia não publica carona nesse dia (409); "Vou junto" em ônibus). API: 130 testes; front: 140 testes. Migration `AddOwnerToRides` aplicada no banco local (caronas e inscrições antigas apagadas com consentimento)
+- **Feature**: revoke-token (`.specs/features/revoke-token/`) — **concluída**. auth, vou-junto e save-rideowner também estão concluídas
+- **Phase / Task**: Execute concluído (T1–T5); Verifier PASS na iteração 2 (`validation.md`: 16/16 ACs, sensor 17/17)
+- **Completed**: T1–T5 + correção de mocks de teste (iteração 1). API: 153 testes; front: 145 testes. Migration `AddTokenVersionInUsersTable` aplicada no banco local (só adiciona coluna)
 - **In-progress** (file:line): none
-- **Next step**: Nenhum. API, front e raiz enviados ao GitHub em 2026-10-08 (API `64cdad0`, front `4dfcc68`)
+- **Next step**: Pendente da usuária: autorizar o `git push` (API `cb3fc00`, front `a3e048b`, depois a raiz). Fora isso, nenhum
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Deploy note**: `POST /ride` mudou de contrato (exige Bearer; sem `name`; `phone` grava na conta) e `GET /ride` troca `name`/`phone` por `owner`. A migration apaga todas as caronas. API e front precisam subir juntos
+- **Deploy note**: API e front sobem juntos. Depois do deploy, todos os tokens antigos (sem `ver`) param de valer e todas as usuárias entram de novo uma vez. A migration só adiciona `users.token_version` (não apaga dados). Atenção: a migration `AddOwnerToRides` (save-rideowner) apaga todas as caronas no banco em que ainda não rodou
