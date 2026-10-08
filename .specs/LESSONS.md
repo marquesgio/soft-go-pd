@@ -38,6 +38,18 @@ Seen once or not yet corroborated. Tracked, not trusted.
 - evidence: AUTH-07 (spec)
 - last seen: 2026-10-07T21:31:06Z
 
+### L-005 - Quando um AC lista o que uma tela mostra (ex.: resumo da carona), testar cada elemento listado, não só a ausência dos campos removidos.
+- signal: `surviving_mutant` · recurrence: 1 feature(s) · scope: `front/components` · harmful: 0
+- features: vou-junto
+- evidence: F10 soft-go-II/src/components/Modal.tsx:60 (front/components)
+- last seen: 2026-10-08T14:31:38Z
+
+### L-006 - Em ACs de rejeição com 'sem criar X', o teste deve verificar o estado persistido (nenhum registro), não só o status HTTP.
+- signal: `spec_precision_gap` · recurrence: 1 feature(s) · scope: `api/validation` · harmful: 0
+- features: vou-junto
+- evidence: JOIN-19 (api/validation)
+- last seen: 2026-10-08T14:31:38Z
+
 ## Quarantined (failed when applied - ignore)
 
 A confirmed lesson that recurred alongside failure. Kept for the maintainer to review.

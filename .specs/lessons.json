@@ -3,7 +3,7 @@
   "promote_threshold": 2,
   "window_days": 45,
   "quarantine_threshold": 2,
-  "next_id": 5,
+  "next_id": 7,
   "lessons": [
     {
       "id": "L-001",
@@ -76,6 +76,42 @@
       ],
       "created": "2026-10-07T21:31:06Z",
       "last_seen": "2026-10-07T21:31:06Z"
+    },
+    {
+      "id": "L-005",
+      "key": "surviving_mutant::quando um ac lista o que uma tela mostra ex resumo da carona testar cada elemento listado nao so a ausencia dos campos removidos",
+      "text": "Quando um AC lista o que uma tela mostra (ex.: resumo da carona), testar cada elemento listado, não só a ausência dos campos removidos.",
+      "signal": "surviving_mutant",
+      "scope": "front/components",
+      "status": "candidate",
+      "features": [
+        "vou-junto"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "F10 soft-go-II/src/components/Modal.tsx:60 (front/components)"
+      ],
+      "created": "2026-10-08T14:31:38Z",
+      "last_seen": "2026-10-08T14:31:38Z"
+    },
+    {
+      "id": "L-006",
+      "key": "spec_precision_gap::em acs de rejeicao com sem criar x o teste deve verificar o estado persistido nenhum registro nao so o status http",
+      "text": "Em ACs de rejeição com 'sem criar X', o teste deve verificar o estado persistido (nenhum registro), não só o status HTTP.",
+      "signal": "spec_precision_gap",
+      "scope": "api/validation",
+      "status": "candidate",
+      "features": [
+        "vou-junto"
+      ],
+      "recurrence": 1,
+      "harmful": 0,
+      "evidence": [
+        "JOIN-19 (api/validation)"
+      ],
+      "created": "2026-10-08T14:31:38Z",
+      "last_seen": "2026-10-08T14:31:38Z"
     }
   ]
 }
