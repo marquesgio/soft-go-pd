@@ -500,16 +500,17 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes:
+- [x] Testes:
   - sem `askPhone`: nenhum campo de texto, e "Confirmar presença" chama `onConfirm(undefined)`;
   - com `askPhone`: campo visível; vazio chama `onConfirm(undefined)`; válido chama `onConfirm("51999998888")`; inválido mostra a mensagem e não chama `onConfirm`;
   - nunca há campo "Nome";
   - fechar chama `onClose`.
-- [ ] Gate quick (front) passa
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: turn join modal into a confirmation`
+**Status**: ✅ Done — `soft-go-II@25f42c8 (inclui ligação mínima no Home para o build; fluxo completo na T16)`
 
 ---
 
