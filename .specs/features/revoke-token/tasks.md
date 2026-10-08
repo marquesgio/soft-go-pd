@@ -139,18 +139,19 @@ T5
 - Skill: NONE
 
 **Done when**:
-- [ ] Unit `JwtAuthGuard`:
+- [x] Unit `JwtAuthGuard`:
   - `ver` igual → libera e `request.user = { id, email }`;
   - `ver` diferente → `401` "Não autenticado";
   - sem `ver` → `401`;
   - conta inexistente → `401`;
   - casos atuais (sem header, outro segredo, expirado) mantidos
-- [ ] Unit `OptionalJwtAuthGuard`: os mesmos casos → libera sempre; `request.user` só no caso válido
-- [ ] Gate build (API) passa (todas as specs HTTP verdes)
+- [x] Unit `OptionalJwtAuthGuard`: os mesmos casos → libera sempre; `request.user` só no caso válido
+- [x] Gate build (API) passa (todas as specs HTTP verdes)
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: reject tokens from an old session version`
+**Status**: ✅ Done — `soft-go-ii-api@bc59ca9` (API: 141 testes)
 
 ---
 

@@ -145,11 +145,11 @@ O "Sair" só apaga o token do navegador. A API aceita qualquer token com assinat
 | REVOKE-03 | P1: Sair invalida os tokens da conta | Design | Pending |
 | REVOKE-04 | P1: Sair invalida os tokens da conta | Design | Pending |
 | REVOKE-05 | P1: A API só aceita a versão atual | Execute | Done (T2) |
-| REVOKE-06 | P1: A API só aceita a versão atual | Design | Pending |
-| REVOKE-07 | P1: A API só aceita a versão atual | Design | Pending |
-| REVOKE-08 | P1: A API só aceita a versão atual | Design | Pending |
-| REVOKE-09 | P1: A API só aceita a versão atual | Design | Pending |
-| REVOKE-10 | P1: A API só aceita a versão atual | Design | Pending |
+| REVOKE-06 | P1: A API só aceita a versão atual | Execute | Implementing (T3) |
+| REVOKE-07 | P1: A API só aceita a versão atual | Execute | Done (T3) |
+| REVOKE-08 | P1: A API só aceita a versão atual | Execute | Done (T3) |
+| REVOKE-09 | P1: A API só aceita a versão atual | Execute | Implementing (T3) |
+| REVOKE-10 | P1: A API só aceita a versão atual | Execute | Done (T3) |
 | REVOKE-11 | P1: Entrar de novo e outras contas | Design | Pending |
 | REVOKE-12 | P1: Entrar de novo e outras contas | Design | Pending |
 | REVOKE-13 | P1: Entrar de novo e outras contas | Execute | Implementing (T2) |
