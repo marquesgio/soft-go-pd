@@ -168,14 +168,15 @@ Entidade `RideUser`: sem `name` e `phone`; `userId` + relação `user` (`foreign
 - Skill: NONE
 
 **Done when**:
-- [ ] Unit: signup com telefone salva `phone`. Sem telefone, salva `null`. `user` do retorno tem `phone` em signup, signin e me
-- [ ] HTTP: signup com `phone` válido → 201 e `user.phone`. `phone: ""` → 201 com `phone: null`. `phone` inválido (`"123"`) → 400 com a mensagem exata. `GET /auth/me` traz `phone`
-- [ ] Os testes existentes de auth continuam passando, ajustados só no `toEqual` do `user`, que agora inclui `phone`
-- [ ] Gate quick (API) passa
+- [x] Unit: signup com telefone salva `phone`. Sem telefone, salva `null`. `user` do retorno tem `phone` em signup, signin e me
+- [x] HTTP: signup com `phone` válido → 201 e `user.phone`. `phone: ""` → 201 com `phone: null`. `phone` inválido (`"123"`) → 400 com a mensagem exata. `GET /auth/me` traz `phone`
+- [x] Os testes existentes de auth continuam passando, ajustados só no `toEqual` do `user`, que agora inclui `phone`
+- [x] Gate quick (API) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: accept phone on sign up`
+**Status**: ✅ Done — `soft-go-ii-api@aa398a6`
 
 ---
 

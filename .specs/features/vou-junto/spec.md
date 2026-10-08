@@ -182,7 +182,7 @@ O modal "Quero ir junto!" pede nome e telefone a cada inscrição, mesmo agora q
 | JOIN-11 | P1: Sem duplicidade | Tasks | Pending |
 | JOIN-12 | P1: Sem duplicidade | Tasks | Pending |
 | JOIN-13 | P1: Telefone na conta | Tasks | Pending |
-| JOIN-14 | P1: Telefone na conta | Tasks | Pending |
+| JOIN-14 | P1: Telefone na conta | Execute | Done (T3) |
 | JOIN-15 | P1: Telefone na conta | Tasks | Pending |
 | JOIN-16 | P1: Telefone na conta | Tasks | Pending |
 | JOIN-17 | P1: Telefone na conta | Tasks | Pending |
