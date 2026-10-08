@@ -280,12 +280,13 @@ T9 → T10
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes: deslogada em `/form` → `/login`, e o formulário não aparece; logada → renderiza os filhos
-- [ ] Gate quick (front) passa
+- [x] Testes: deslogada em `/form` → `/login`, e o formulário não aparece; logada → renderiza os filhos
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: require login to open ride form`
+**Status**: ✅ Done — `soft-go-II@f694ec7` (front: 115 testes)
 
 ---
 

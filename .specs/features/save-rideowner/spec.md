@@ -182,7 +182,7 @@ Quem publica uma carona digita nome e telefone no formulário, e esses dados fic
 | OWNER-07 | P1: Só quem está logada publica | Execute | Done (T4) |
 | OWNER-08 | P1: Só quem está logada publica | Execute | Done (T4) |
 | OWNER-09 | P1: Só quem está logada publica | Design | Pending |
-| OWNER-10 | P1: Só quem está logada publica | Design | Pending |
+| OWNER-10 | P1: Só quem está logada publica | Execute | Done (T7) |
 | OWNER-11 | P1: Mural mostra a dona | Execute | Done (T3) |
 | OWNER-12 | P1: Mural mostra a dona | Execute | Done (T4) |
 | OWNER-13 | P1: Mural mostra a dona | Execute | Done (T4) |
