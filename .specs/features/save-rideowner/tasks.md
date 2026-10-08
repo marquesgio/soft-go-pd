@@ -161,17 +161,18 @@ T9 → T10
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes unit:
+- [x] Testes unit:
   - `owner.id` e `owner.name` completo (ex.: "Ana Maria Souza", não "Ana");
   - com viewer → `owner.phone` igual ao telefone; com viewer e conta sem telefone → `owner.phone === null`;
   - sem viewer → a chave `phone` não existe em `owner`;
   - a raiz da carona não tem as chaves `name`, `phone` e `ownerId`;
   - `relations` inclui `owner`
-- [ ] Gate quick (API) passa
+- [x] Gate quick (API) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: return ride owner in ride list`
+**Status**: ✅ Done — `soft-go-ii-api@4db8137` (API: 109 testes)
 
 ---
 
