@@ -221,7 +221,7 @@ T3 → T4 → T5 → T6
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes (L-005):
+- [x] Testes (L-005):
   - título "Excluir carona?", nome da dona, cidade, hora e transporte, botões "Cancelar" e "Excluir";
   - 0 participantes → "Ninguém confirmou presença ainda.", sem a linha "Sem WhatsApp";
   - 1 participante → "1 pessoa confirmou presença e será removida da carona.";
@@ -231,11 +231,12 @@ T3 → T4 → T5 → T6
   - "Cancelar", "X" e clique no overlay → `onClose` chamado, `onConfirm` não;
   - clique dentro do diálogo → `onClose` não chamado;
   - "Excluir" → `onConfirm` chamado uma vez; com `onConfirm` pendente, o botão fica desabilitado e um segundo clique não chama de novo
-- [ ] Gate quick (front) passa
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add delete ride confirmation modal`
+**Status**: ✅ Done — `soft-go-II@429d3f0` (front: 165 testes)
 
 ---
 

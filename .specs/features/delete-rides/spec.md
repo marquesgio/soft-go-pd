@@ -128,8 +128,8 @@ Hoje não existe forma de excluir uma carona publicada por engano ou que não va
 | DEL-08 | P1: Dona exclui pelo card | Tasks | Mapped (T4, T6) |
 | DEL-09 | P1: Dona exclui pelo card | Execute | Implemented (T4) |
 | DEL-10 | P1: Dona exclui pelo card | Tasks | Mapped (T5, T6) |
-| DEL-11 | P1: Dona exclui pelo card | Tasks | Mapped (T5) |
-| DEL-12 | P1: Dona exclui pelo card | Tasks | Mapped (T5) |
+| DEL-11 | P1: Dona exclui pelo card | Execute | Implemented (T5) |
+| DEL-12 | P1: Dona exclui pelo card | Execute | Implemented (T5) |
 | DEL-13 | P1: Dona exclui pelo card | Tasks | Mapped (T5, T6) |
 | DEL-14 | P1: Dona exclui pelo card | Tasks | Mapped (T3, T5, T6) |
 | DEL-15 | P1: Dona exclui pelo card | Tasks | Mapped (T6) |
