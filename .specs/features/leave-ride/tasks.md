@@ -272,7 +272,7 @@ T3 → T4 → T5 → T6 → T7
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes (serviços mockados):
+- [x] Testes (serviços mockados):
   - mural: card com "Ver passageiros (N)" e nomes escondidos;
   - passageira: "Sair da carona" abre "Sair da carona?"; "Sair" → `removeRideUser(3, <id dela>)`, toast "Você saiu da carona", modal fecha, recarrega e o card volta a mostrar "Vou junto";
   - dona: "Remover Bia da carona" abre "Remover Bia da carona?"; "Remover" → `removeRideUser(3, 2)`, toast "Bia foi removida da carona", recarrega;
@@ -280,11 +280,12 @@ T3 → T4 → T5 → T6 → T7
   - `403`/`404` → toast com a mensagem da API, fecha, recarrega;
   - `500` → toast "Não foi possível remover da carona. Tente novamente.";
   - `401` → nenhum toast do Home
-- [ ] Gate build (front) passa (fim da Phase 2)
+- [x] Gate build (front) passa (fim da Phase 2)
 
 **Tests**: unit
 **Gate**: build
 **Commit**: `feat: let passengers leave and owners remove passengers`
+**Status**: ✅ Done — `soft-go-II@d3ddb66` (front: 206 testes; fim da Phase 2)
 
 ---
 
