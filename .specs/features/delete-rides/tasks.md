@@ -10,7 +10,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 **Design**: inline (sem `design.md`: uma rota nova num controller existente, sem migration nem padrão novo)
 **Spec**: `.specs/features/delete-rides/spec.md` · **Context**: `.specs/features/delete-rides/context.md`
-**Status**: Done (2026-10-08) — T1–T6 concluídas; Verifier PASS na iteração 1 (`validation.md`)
+**Status**: Done (2026-10-08) — T1–T7 concluídas; Verifier PASS (`validation.md`)
 
 **Repositórios**:
 - T1–T2 commitam em `soft-go-ii-api/` (`master`). T3–T6 commitam em `soft-go-II/` (`main`).
@@ -84,6 +84,12 @@ T1 → T2
 
 ```
 T3 → T4 → T5 → T6
+```
+
+### Phase 3: Ajuste pedido depois da validação
+
+```
+T7
 ```
 
 ---
@@ -276,6 +282,30 @@ T3 → T4 → T5 → T6
 
 ---
 
+### T7: Lixeira ao lado do tipo de transporte
+
+**What**: Pedido da usuária depois do PASS. A ação de excluir vira um ícone de lixeira (só ícone, `aria-label` "Excluir carona"), logo à direita da etiqueta do tipo de transporte. Ela sai da linha de ações (WhatsApp, "Sua carona"). DEL-08 foi reescrito na spec.
+**Where**: `soft-go-II/src/components/Card.tsx`
+**Also touches**: `src/components/Card.test.tsx`
+**Depends on**: None (Phase 2 concluída)
+**Reuses**: botão "X" do `Modal` (ícone com `aria-label`)
+**Requirement**: DEL-08
+
+**Tools**:
+- MCP: NONE
+- Skill: NONE
+
+**Done when**:
+- [x] Testes: a lixeira é o elemento logo depois da etiqueta "Carro"; o botão não tem texto visível; a linha de "Sua carona" não tem botão. Os testes de ausência (outra conta, deslogada, `showButton={false}`) continuam passando
+- [x] Gate build (front) passa
+
+**Tests**: unit
+**Gate**: build
+**Commit**: `feat: move ride delete action to trash icon beside transport type`
+**Status**: ✅ Done — `soft-go-II@44b4e9b` (front: 174 testes)
+
+---
+
 ## Phase Execution Map
 
 ```
@@ -283,6 +313,7 @@ Phase 1 → Phase 2
 
 Phase 1 (API):   T1 → T2
 Phase 2 (Front): T3 → T4 → T5 → T6
+Phase 3 (Ajuste): T7
 ```
 
 Execution is strictly sequential. 6 tarefas: cabem num lote só, execução inline sem sub-agentes. O Verifier roda no fim.
@@ -299,6 +330,7 @@ Execution is strictly sequential. 6 tarefas: cabem num lote só, execução inli
 | T4 | 1 componente | ✅ |
 | T5 | 1 componente novo | ✅ |
 | T6 | 1 página | ✅ |
+| T7 | 1 componente | ✅ |
 
 ## Diagram-Definition Cross-Check
 
@@ -310,6 +342,7 @@ Execution is strictly sequential. 6 tarefas: cabem num lote só, execução inli
 | T4 | T3 | T3 → T4 | ✅ |
 | T5 | T4 | T4 → T5 | ✅ |
 | T6 | T5 | T5 → T6 | ✅ |
+| T7 | None (Phase 2 concluída) | início da Phase 3 | ✅ |
 
 ## Test Co-location Validation
 
@@ -321,6 +354,7 @@ Execution is strictly sequential. 6 tarefas: cabem num lote só, execução inli
 | T4 | Front componente | unit | unit | ✅ |
 | T5 | Front componente | unit | unit | ✅ |
 | T6 | Front página | unit | unit | ✅ |
+| T7 | Front componente | unit | unit | ✅ |
 
 ## Requirement Coverage
 
@@ -335,7 +369,7 @@ Todos os 16 requisitos estão mapeados:
 | DEL-05 | T2 |
 | DEL-06 | T2 |
 | DEL-07 | T2 |
-| DEL-08 | T4, T6 |
+| DEL-08 | T4, T6, T7 |
 | DEL-09 | T4 |
 | DEL-10 | T5, T6 |
 | DEL-11 | T5 |

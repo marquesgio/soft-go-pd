@@ -75,7 +75,7 @@ Hoje não existe forma de excluir uma carona publicada por engano ou que não va
 
 **Acceptance Criteria**:
 
-1. WHEN o card mostra uma carona cuja dona é a usuária logada THEN the front SHALL exibir o botão "Excluir carona" junto do selo "Sua carona". [DEL-08]
+1. WHEN o card mostra uma carona cuja dona é a usuária logada THEN the front SHALL exibir um ícone de lixeira, sem texto visível e com nome acessível "Excluir carona", logo à direita da etiqueta do tipo de transporte. A linha de ações (WhatsApp, "Sua carona") SHALL não ter botão de excluir. [DEL-08]
 2. WHILE a usuária está deslogada ou não é a dona da carona the front SHALL não exibir o botão "Excluir carona" no card. [DEL-09]
 3. WHEN a dona clica em "Excluir carona" THEN the front SHALL abrir um modal com o título "Excluir carona?", o resumo da carona (dona, cidade, hora, transporte) e os botões "Cancelar" e "Excluir". [DEL-10]
 4. WHILE a carona tem participantes the modal SHALL exibir "1 pessoa confirmou presença e será removida da carona." ou "N pessoas confirmaram presença e serão removidas da carona.", e WHILE não tem, SHALL exibir "Ninguém confirmou presença ainda.". [DEL-11]
@@ -125,7 +125,7 @@ Hoje não existe forma de excluir uma carona publicada por engano ou que não va
 | DEL-05 | P1: API exclui só para a dona | Execute | Verified (T2) |
 | DEL-06 | P1: API exclui só para a dona | Execute | Verified (T2) |
 | DEL-07 | P1: API exclui só para a dona | Execute | Verified (T2) |
-| DEL-08 | P1: Dona exclui pelo card | Execute | Verified (T4, T6) |
+| DEL-08 | P1: Dona exclui pelo card | Execute | Implemented (T4, T6, T7) |
 | DEL-09 | P1: Dona exclui pelo card | Execute | Verified (T4) |
 | DEL-10 | P1: Dona exclui pelo card | Execute | Verified (T5, T6) |
 | DEL-11 | P1: Dona exclui pelo card | Execute | Verified (T5) |
