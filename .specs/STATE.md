@@ -53,12 +53,12 @@
 
 ## Handoff
 
-- **Feature**: leave-ride (`.specs/features/leave-ride/`) — **concluída**. delete-rides também concluída (T1–T7). auth, vou-junto, save-rideowner e revoke-token concluídas
-- **Phase / Task**: Execute concluído (T1–T7); Verifier PASS na iteração 1 (`validation.md`: 21/21 ACs, sensor 30/30)
-- **Completed**: delete-rides e leave-ride. API: 185 testes; front: 206 testes. Checagens manuais no banco local deixaram 5 contas de teste (`*.delete.<timestamp>@teste.com`, `*.leave.<timestamp>@teste.com`)
+- **Feature**: nenhuma em andamento. auth, vou-junto, save-rideowner, revoke-token, delete-rides e leave-ride concluídas. Resumo geral em `HISTORICO.md`
+- **Phase / Task**: —
+- **Completed**: ajustes avulsos depois do leave-ride: filtros de cidade e data lado a lado (front) e busca de cidade sem diferenciar maiúsculas/acentos e por parte do nome (API, `RideService.findAllRides`). API: 197 testes; front: 206 testes
 - **In-progress** (file:line): none
-- **Next step**: Enviar ao GitHub quando a usuária autorizar (API `432a706`, front `d3ddb66`, raiz). Próximo card: `prds/notify-ride-deleted.md` (avisos de carona excluída, passageira que saiu e passageira removida)
+- **Next step**: `git push --recurse-submodules=on-demand` (com autorização da usuária) para levar ao outro notebook. Depois, o card `prds/notify-ride-deleted.md`
 - **Blockers**: none
-- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
+- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Deploy note**: Só código; sem migration. API e front sobem juntos. Nada enviado ao GitHub desde revoke-token
+- **Deploy note**: Só código; sem migration nova desde revoke-token. Atenção às migrations `LinkRideUsersToUsers` e `AddOwnerToRides`, que apagam dados num banco onde ainda não rodaram (ver `HISTORICO.md`)

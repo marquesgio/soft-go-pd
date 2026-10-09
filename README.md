@@ -11,6 +11,8 @@ Este repositório reúne os dois projetos como **submódulos git** e guarda os p
 | `.specs/` | Specs, designs, tarefas e estado das features (skill `tlc-spec-driven`) | este repo |
 | `.claude/skills/` | Skill `tlc-spec-driven` usada para planejar e executar as features | este repo |
 
+O que já foi feito, por quê e as escolhas que pesam no futuro estão em [`HISTORICO.md`](HISTORICO.md). Os cards de produto de cada feature ficam em [`prds/`](prds/).
+
 ## Começando em um computador novo
 
 ### 1. Clonar com os submódulos
