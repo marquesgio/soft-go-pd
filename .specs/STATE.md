@@ -53,12 +53,12 @@
 
 ## Handoff
 
-- **Feature**: nenhuma em andamento. auth, vou-junto, save-rideowner, revoke-token, delete-rides e leave-ride concluídas. Resumo geral em `HISTORICO.md`
+- **Feature**: nenhuma em andamento. notify-ride-deleted concluída em 2026-10-09 (sem Verifier independente, a pedido da usuária). Resumo geral em `HISTORICO.md`
 - **Phase / Task**: —
-- **Completed**: ajustes avulsos depois do leave-ride: filtros de cidade e data lado a lado (front) e busca de cidade sem diferenciar maiúsculas/acentos e por parte do nome (API, `RideService.findAllRides`). API: 197 testes; front: 206 testes
+- **Completed**: notify-ride-deleted T1–T8 (avisos no app + sino). API: 239 testes; front: 220 testes. Migration `CreateTableNotifications` aplicada no banco local
 - **In-progress** (file:line): none
-- **Next step**: `git push --recurse-submodules=on-demand` (com autorização da usuária) para levar ao outro notebook. Depois, o card `prds/notify-ride-deleted.md`
+- **Next step**: `git push --recurse-submodules=on-demand` (com autorização da usuária). Opcional: rodar o Verifier de notify-ride-deleted
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Deploy note**: Só código; sem migration nova desde revoke-token. Atenção às migrations `LinkRideUsersToUsers` e `AddOwnerToRides`, que apagam dados num banco onde ainda não rodaram (ver `HISTORICO.md`)
+- **Deploy note**: Migration nova `CreateTableNotifications` (só cria tabela). API e front sobem juntos. Atenção às migrations antigas que apagam dados (ver `HISTORICO.md`)

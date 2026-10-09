@@ -1,6 +1,6 @@
 # Histórico do Soft Go II
 
-O que foi feito até 2026-10-08, por quê e quais escolhas pesam no futuro. Para montar o ambiente num computador novo, siga o [README](README.md). Para retomar com o Claude Code, abra a pasta raiz e diga "retomar": o estado vivo fica em [`.specs/STATE.md`](.specs/STATE.md).
+O que foi feito até 2026-10-09, por quê e quais escolhas pesam no futuro. Para montar o ambiente num computador novo, siga o [README](README.md). Para retomar com o Claude Code, abra a pasta raiz e diga "retomar": o estado vivo fica em [`.specs/STATE.md`](.specs/STATE.md).
 
 ## Levar para outro notebook
 
@@ -38,12 +38,13 @@ Todas estão concluídas e passaram no Verifier. Os números de testes são os d
 | **revoke-token** | "Sair" invalida todos os tokens da conta, em todos os aparelhos | O "Sair" só apagava o token do navegador, e uma cópia dele continuava valendo por 7 dias |
 | **delete-rides** | A dona exclui a própria carona pela lixeira ao lado do tipo de transporte, com um modal que mostra quantas pessoas confirmaram e quem não tem WhatsApp | Não havia como tirar do mural uma carona publicada por engano ou cancelada |
 | **leave-ride** | A lista de passageiros fica recolhida ("Ver passageiros (N)"). Aberta, a passageira sai da carona pela lixeira no próprio nome, e a dona remove qualquer passageira | A passageira não conseguia desistir e a vaga ficava presa. A dona também não conseguia tirar quem não ia |
+| **notify-ride-deleted** | Avisos dentro do app: carona excluída avisa as participantes; passageira que sai avisa a dona; passageira removida é avisada. Sino no topo com o número de não lidos; abrir marca tudo como lido | Essas três ações aconteciam em silêncio, e quem não tinha telefone só percebia ao abrir o mural |
 
 **Ajustes avulsos (fora das features):**
 - **Filtros de cidade e data:** ficam lado a lado e dividem a largura da tela.
 - **Busca por cidade:** ignora maiúsculas, minúsculas e acentos, e acha a cidade por parte do nome ("sao" encontra "São Leopoldo" e "São Paulo").
 
-**Testes:** API com 197 e front com 206, todos passando. O front não tinha testes antes da feature auth.
+**Testes:** API com 239 e front com 220, todos passando. O front não tinha testes antes da feature auth.
 
 ## Escolhas que impactam o futuro
 
@@ -64,7 +65,7 @@ Todas estão concluídas e passaram no Verifier. Os números de testes são os d
 ### Regras de negócio
 - **Quem vai de carona não publica carona no mesmo dia.** Quem confirmou presença numa carona recebe `409` ao tentar publicar outra na mesma data. Sair da carona libera a publicação. A regra não vale para inscrições: dá para se inscrever em mais de uma carona no mesmo dia. As specs de delete-rides e leave-ride sugerem o contrário ao falar em "entrar em outra carona no mesmo dia"; o que vale é o código.
 - **Quem pode remover uma inscrição:** a própria passageira (sair) e a dona da carona (remover). As duas usam a mesma rota, `DELETE /ride-users/:rideId/users/:userId`. Outras contas recebem `403`.
-- **Ninguém é avisado de nada ainda.** A exclusão da carona, a saída e a remoção de passageira acontecem em silêncio. A dona vê no modal quem não tem WhatsApp. O aviso por e-mail ou dentro do app é o card [`prds/notify-ride-deleted.md`](prds/notify-ride-deleted.md).
+- **Avisos só dentro do app, sem e-mail** (notify-ride-deleted). A pessoa só vê o aviso quando abre o app; não há tempo real (o sino atualiza ao carregar a página e ao abrir). A frase do aviso é gravada pronta no momento da ação, porque a carona excluída some do banco. A ação sempre vem antes do aviso: se gravar o aviso falhar, a ação continua valendo e o erro só vai para o log. Os avisos não expiram; o painel mostra os 30 mais recentes. E-mail fica como ideia futura.
 - **A busca por cidade é feita na API, em memória**, depois de buscar as caronas no banco. Para o volume de um mural isso não pesa. Se um dia houver milhares de caronas, vale passar para o banco (extensão `unaccent` do PostgreSQL + `ILIKE`).
 
 ### Front
@@ -74,7 +75,9 @@ Todas estão concluídas e passaram no Verifier. Os números de testes são os d
 
 ## Pendências
 
-- **Próximo card:** [`prds/notify-ride-deleted.md`](prds/notify-ride-deleted.md). Avisar participantes quando a carona for excluída, a dona quando alguém sair, e a passageira quando for removida. A escolha do canal (e-mail, aviso no app ou os dois) está em aberto.
+- **Nenhum card aberto.** Todos os PRDs em `prds/` foram entregues.
+- **notify-ride-deleted sem Verifier independente:** foi entregue com gates e checagem ponta a ponta, mas o agente que confere requisitos e injeta bugs não rodou (pedido de rapidez). Rode-o quando puder: "validar notify-ride-deleted".
+- **Migration nova `CreateTableNotifications`:** só cria a tabela `notifications`. Rode `npm run migrations:run` no notebook novo e em qualquer banco antes de subir a API.
 - **Teste que falta (apontado pelo Verifier do leave-ride):** nenhum teste automático exclui uma inscrição e depois confere no `GET /ride` que a vaga voltou. Isso foi confirmado só manualmente.
 - **Fora de escopo, mas notado:** `GET /ride-users` e `GET /ride-users/:id` estão abertos sem login. A tabela de contrato no `CLAUDE.md` ainda descreve `createRideUser` com `name`, que não existe mais.
-- **Banco local deste notebook:** ficaram 5 contas de teste das checagens manuais (`*.delete.<timestamp>@teste.com` e `*.leave.<timestamp>@teste.com`). Elas não vão para o notebook novo.
+- **Banco local deste notebook:** ficaram 8 contas de teste das checagens manuais (`*.delete.<timestamp>@teste.com`, `*.leave.<timestamp>@teste.com` e `*.notify.<timestamp>@teste.com`). Elas não vão para o notebook novo.
