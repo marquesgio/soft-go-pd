@@ -136,15 +136,15 @@ Depois de confirmar presença ("Vou junto"), a passageira não tem como desistir
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| LEAVE-01 | P1: API remove inscrição com permissão | Tasks | Mapped (T1, T2) |
-| LEAVE-02 | P1: API remove inscrição com permissão | Tasks | Mapped (T1, T2) |
-| LEAVE-03 | P1: API remove inscrição com permissão | Tasks | Mapped (T2) |
-| LEAVE-04 | P1: API remove inscrição com permissão | Tasks | Mapped (T1, T2) |
-| LEAVE-05 | P1: API remove inscrição com permissão | Tasks | Mapped (T1, T2) |
-| LEAVE-06 | P1: API remove inscrição com permissão | Tasks | Mapped (T1, T2) |
-| LEAVE-07 | P1: API remove inscrição com permissão | Tasks | Mapped (T2) |
-| LEAVE-08 | P1: API remove inscrição com permissão | Tasks | Mapped (T2) |
-| LEAVE-09 | P1: API remove inscrição com permissão | Tasks | Mapped (T2) |
+| LEAVE-01 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
+| LEAVE-02 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
+| LEAVE-03 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
+| LEAVE-04 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
+| LEAVE-05 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
+| LEAVE-06 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
+| LEAVE-07 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
+| LEAVE-08 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
+| LEAVE-09 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
 | LEAVE-10 | P1: Lista de passageiros recolhível | Tasks | Mapped (T4, T7) |
 | LEAVE-11 | P1: Lista de passageiros recolhível | Tasks | Mapped (T4) |
 | LEAVE-12 | P1: Lista de passageiros recolhível | Tasks | Mapped (T4) |

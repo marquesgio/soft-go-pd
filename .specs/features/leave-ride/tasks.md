@@ -131,7 +131,7 @@ T3 → T4 → T5 → T6 → T7
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes HTTP (repositórios fake):
+- [x] Testes HTTP (repositórios fake):
   - token da passageira → `204`, corpo vazio, inscrição apagada;
   - token da dona → `204`, inscrição apagada;
   - depois da saída, a mesma passageira se inscreve de novo (`POST /ride-users` → `201`);
@@ -141,12 +141,13 @@ T3 → T4 → T5 → T6 → T7
   - `abc` em `:rideId` e em `:userId` → `400`, nada apagado;
   - sem token, outro segredo, expirado, sessão revogada → `401` "Não autenticado", nada apagado;
   - mapa `EXPECTED_GUARDS` e "Nenhum guard global" passando
-- [ ] Verificação manual no banco local (**pedir confirmação antes**): com contas de teste novas, terceira conta → `403`; passageira sai → `204` e `GET /ride` devolve a vaga; dona remove → `204`
-- [ ] Gate build (API) passa (fim da Phase 1)
+- [x] Verificação manual no banco local (**pedir confirmação antes**): com contas de teste novas, terceira conta → `403`; passageira sai → `204` e `GET /ride` devolve a vaga; dona remove → `204`
+- [x] Gate build (API) passa (fim da Phase 1)
 
 **Tests**: integration
 **Gate**: build
 **Commit**: `feat: add route to remove ride passengers`
+**Status**: ✅ Done — `soft-go-ii-api@432a706` (API: 185 testes; fim da Phase 1). Checagem manual no banco local com 3 contas de teste novas: terceira → `403`; passageira sai → `204` e vagas 0 → 1; nova inscrição → `201`; dona remove → `204`; repetir → `404`. Carona de teste excluída no fim
 
 ---
 
