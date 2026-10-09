@@ -189,7 +189,7 @@ T3 → T4 → T5 → T6 → T7
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes:
+- [x] Testes:
   - fechada: botão "Ver passageiros (2)" com `aria-expanded="false"`, nomes ausentes;
   - abrir: nomes aparecem, botão vira "Esconder passageiros" com `aria-expanded="true"`; fechar esconde de novo;
   - sem participantes: nem botão nem lista;
@@ -197,11 +197,12 @@ T3 → T4 → T5 → T6 → T7
   - participante logada: lixeira "Sair da carona" só no próprio nome (uma lixeira no total); clique chama `onRemove` com o participante;
   - dona: "Remover Ana da carona" e "Remover Bia da carona"; clique chama `onRemove` com o participante certo;
   - outra conta, deslogada, `canRemove=false` (dona ou participante) → nenhuma lixeira
-- [ ] Gate quick (front) passa
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add collapsible participants list`
+**Status**: ✅ Done — `soft-go-II@7a06fcb` (front: 187 testes)
 
 ---
 
