@@ -54,7 +54,7 @@
 ## Handoff
 
 - **Feature**: leave-ride (`.specs/features/leave-ride/`) — em execução. delete-rides concluída (T1–T7, Verifier PASS)
-- **Phase / Task**: Execute: T1–T4 concluídas, próxima T5
+- **Phase / Task**: Execute: T1–T5 concluídas, próxima T6
 - **Completed**: leave-ride T1–T2. API: 185 testes; front: 174 testes
 - **In-progress** (file:line): none
 - **Next step**: T2 (`DELETE /ride-users/:rideId/users/:userId`). Depois: `prds/notify-ride-deleted.md` (cobre exclusão, saída e remoção)

@@ -220,15 +220,16 @@ T3 → T4 → T5 → T6 → T7
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes:
+- [x] Testes:
   - título e botão de confirmar com os textos recebidos ("Sair da carona?"/"Sair"), mais "Cancelar";
   - "Cancelar", "X" e overlay → `onClose`, sem `onConfirm`; clique dentro não fecha;
   - confirmar → `onConfirm` uma vez; pendente → botão desabilitado e segundo clique ignorado
-- [ ] Gate quick (front) passa
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add generic confirm dialog`
+**Status**: ✅ Done — `soft-go-II@7a7c674` (front: 194 testes)
 
 ---
 
