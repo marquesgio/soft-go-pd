@@ -53,12 +53,12 @@
 
 ## Handoff
 
-- **Feature**: delete-rides (`.specs/features/delete-rides/`) — **concluída**. auth, vou-junto, save-rideowner e revoke-token também estão concluídas
-- **Phase / Task**: Execute concluído (T1–T6); Verifier PASS na iteração 1 (`validation.md`: 16/16 ACs, sensor 20/20)
-- **Completed**: T1–T6. API: 167 testes; front: 173 testes. Checagem manual do cascade no banco local (duas contas de teste `*.delete.<timestamp>@teste.com` ficaram no banco)
+- **Feature**: leave-ride (`.specs/features/leave-ride/`) — em execução. delete-rides concluída (T1–T7, Verifier PASS)
+- **Phase / Task**: Execute: T1 concluída, próxima T2 (tasks aprovadas em 2026-10-08)
+- **Completed**: leave-ride T1. API: 173 testes; front: 174 testes
 - **In-progress** (file:line): none
-- **Next step**: Enviar ao GitHub quando a usuária autorizar (API `541c0ca`, front `3f74f33`, raiz). Próximos cards, nesta ordem: `prds/notify-ride-deleted.md` → `prds/leave-ride.md`
+- **Next step**: T2 (`DELETE /ride-users/:rideId/users/:userId`). Depois: `prds/notify-ride-deleted.md` (cobre exclusão, saída e remoção)
 - **Blockers**: none
-- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária, inclui os cards novos `notify-ride-deleted.md` e `leave-ride.md`)
+- **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Deploy note**: Só código; sem migration. O cascade já existe no banco (`FK_ride_users_ride ON DELETE CASCADE`). API e front sobem juntos
+- **Deploy note**: Nada enviado ao GitHub desde revoke-token. Só código; sem migration
