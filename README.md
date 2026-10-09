@@ -88,10 +88,13 @@ Features planejadas ficam em `.specs/features/<feature>/` (`spec.md`, `context.m
    git add soft-go-ii-api .specs
    git commit -m "docs: ..."
    ```
-3. Publique tudo de uma vez (envia os submódulos primeiro, depois a raiz):
+3. Publique os submódulos primeiro e a raiz por último:
    ```bash
-   git push --recurse-submodules=on-demand
+   git -C soft-go-ii-api push origin master
+   git -C soft-go-II push origin main
+   git push origin main
    ```
+   O atalho `git push --recurse-submodules=on-demand` não funciona aqui: ele tenta enviar a branch `main` também na API, que usa `master`.
    Não dê push só na raiz: ela passaria a apontar para commits que não existem no GitHub e o clone em outra máquina quebra.
 
 Para atualizar em outra máquina:

@@ -57,7 +57,7 @@
 - **Phase / Task**: —
 - **Completed**: notify-ride-deleted T1–T8 (avisos no app + sino). API: 239 testes; front: 220 testes. Migration `CreateTableNotifications` aplicada no banco local
 - **In-progress** (file:line): none
-- **Next step**: `git push --recurse-submodules=on-demand` (com autorização da usuária). Opcional: rodar o Verifier de notify-ride-deleted
+- **Next step**: Nada pendente; tudo enviado ao GitHub em 2026-10-09 (API `e7818db`, front `c64f6d4`). Opcional: rodar o Verifier de notify-ride-deleted
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar)
 - **Branch**: raiz `main`; API `master`; front `main`

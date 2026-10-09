@@ -6,9 +6,11 @@ O que foi feito até 2026-10-09, por quê e quais escolhas pesam no futuro. Para
 
 1. **Neste notebook, publique tudo.** Os commits ficam só aqui até o push:
    ```bash
-   git push --recurse-submodules=on-demand
+   git -C soft-go-ii-api push origin master
+   git -C soft-go-II push origin main
+   git push origin main
    ```
-   Esse comando envia a API e o front antes da raiz. Se você der push só na raiz, o clone novo aponta para commits que não existem no GitHub.
+   A API e o front vão antes da raiz. O atalho `git push --recurse-submodules=on-demand` falha, porque a API usa a branch `master` e a raiz usa `main`. Se você der push só na raiz, o clone novo aponta para commits que não existem no GitHub.
 2. **No notebook novo**, siga o README: clonar com `--recurse-submodules`, colocar os submódulos na branch (`master` na API, `main` no front), criar os dois `.env` a partir dos `.env.example`, `npm install` e `npm run migrations:run`.
 3. **O que não vai pelo git:**
    - Os `.env`, inclusive o `JWT_SECRET`. Com um segredo novo, quem estava logada só precisa entrar de novo.
