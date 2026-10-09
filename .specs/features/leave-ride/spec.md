@@ -145,18 +145,18 @@ Depois de confirmar presença ("Vou junto"), a passageira não tem como desistir
 | LEAVE-07 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
 | LEAVE-08 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
 | LEAVE-09 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
-| LEAVE-10 | P1: Lista de passageiros recolhível | Tasks | Mapped (T4, T7) |
-| LEAVE-11 | P1: Lista de passageiros recolhível | Tasks | Mapped (T4) |
-| LEAVE-12 | P1: Lista de passageiros recolhível | Tasks | Mapped (T4) |
-| LEAVE-13 | P1: Lista de passageiros recolhível | Tasks | Mapped (T4, T7) |
-| LEAVE-14 | P1: Sair ou remover pela lista | Tasks | Mapped (T4, T6) |
-| LEAVE-15 | P1: Sair ou remover pela lista | Tasks | Mapped (T4, T6) |
-| LEAVE-16 | P1: Sair ou remover pela lista | Tasks | Mapped (T4, T6) |
-| LEAVE-17 | P1: Sair ou remover pela lista | Tasks | Mapped (T5, T7) |
-| LEAVE-18 | P1: Sair ou remover pela lista | Tasks | Mapped (T5, T7) |
-| LEAVE-19 | P1: Sair ou remover pela lista | Tasks | Mapped (T3, T5, T7) |
-| LEAVE-20 | P1: Sair ou remover pela lista | Tasks | Mapped (T7) |
-| LEAVE-21 | P1: Sair ou remover pela lista | Tasks | Mapped (T7) |
+| LEAVE-10 | P1: Lista de passageiros recolhível | Execute | Implemented (T4, T7) |
+| LEAVE-11 | P1: Lista de passageiros recolhível | Execute | Implemented (T4) |
+| LEAVE-12 | P1: Lista de passageiros recolhível | Execute | Implemented (T4) |
+| LEAVE-13 | P1: Lista de passageiros recolhível | Execute | Implemented (T4, T7) |
+| LEAVE-14 | P1: Sair ou remover pela lista | Execute | Implemented (T4, T6) |
+| LEAVE-15 | P1: Sair ou remover pela lista | Execute | Implemented (T4, T6) |
+| LEAVE-16 | P1: Sair ou remover pela lista | Execute | Implemented (T4, T6) |
+| LEAVE-17 | P1: Sair ou remover pela lista | Execute | Implemented (T5, T7) |
+| LEAVE-18 | P1: Sair ou remover pela lista | Execute | Implemented (T5, T7) |
+| LEAVE-19 | P1: Sair ou remover pela lista | Execute | Implemented (T3, T5, T7) |
+| LEAVE-20 | P1: Sair ou remover pela lista | Execute | Implemented (T7) |
+| LEAVE-21 | P1: Sair ou remover pela lista | Execute | Implemented (T7) |
 
 **Coverage:** 21 total, 21 mapped to tasks, 0 unmapped
 

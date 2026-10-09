@@ -10,7 +10,7 @@ Implement these tasks with the `tlc-spec-driven` skill: **activate it by name an
 
 **Design**: inline (sem `design.md`: uma rota nova e componentes no padrão de delete-rides)
 **Spec**: `.specs/features/leave-ride/spec.md` · **Context**: `.specs/features/leave-ride/context.md`
-**Status**: In Progress
+**Status**: In Progress — T1–T7 concluídas; Verifier pendente
 
 **Repositórios**:
 - T1–T2 commitam em `soft-go-ii-api/` (`master`). T3–T7 commitam em `soft-go-II/` (`main`).
