@@ -247,13 +247,14 @@ T3 → T4 → T5 → T6 → T7
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes do Card: lista fechada por padrão; aberta mostra os nomes e links (asserções atuais mantidas); dona vê "Remover Ana da carona"; participante vê "Sair da carona"; `showButton={false}` sem lixeiras; clique chama `onRemoveParticipant` com o participante
-- [ ] Testes do Home de participantes abrem a lista e mantêm as asserções atuais
-- [ ] Gate quick (front) passa
+- [x] Testes do Card: lista fechada por padrão; aberta mostra os nomes e links (asserções atuais mantidas); dona vê "Remover Ana da carona"; participante vê "Sair da carona"; `showButton={false}` sem lixeiras; clique chama `onRemoveParticipant` com o participante
+- [x] Testes do Home de participantes abrem a lista e mantêm as asserções atuais
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: collapse participants list on ride card`
+**Status**: ✅ Done — `soft-go-II@8e2eb19` (front: 198 testes; os 4 testes de participantes do Card e 2 do Home passaram a abrir a lista antes, mantendo as asserções)
 
 ---
 
