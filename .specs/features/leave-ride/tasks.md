@@ -165,12 +165,13 @@ T3 → T4 → T5 → T6 → T7
 - Skill: NONE
 
 **Done when**:
-- [ ] Testes unit: `removeRideUser(3, 7)` chama `api.delete("/ride-users/3/users/7")` uma vez; erro da API é propagado
-- [ ] Gate quick (front) passa
+- [x] Testes unit: `removeRideUser(3, 7)` chama `api.delete("/ride-users/3/users/7")` uma vez; erro da API é propagado
+- [x] Gate quick (front) passa
 
 **Tests**: unit
 **Gate**: quick
 **Commit**: `feat: add remove ride user service`
+**Status**: ✅ Done — `soft-go-II@2063e61` (front: 176 testes)
 
 ---
 
