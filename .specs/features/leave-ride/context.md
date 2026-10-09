@@ -2,7 +2,7 @@
 
 **Gathered:** 2026-10-08
 **Spec:** `.specs/features/leave-ride/spec.md`
-**Status:** Ready for tasks
+**Status:** Done
 
 ---
 

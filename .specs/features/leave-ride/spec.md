@@ -2,7 +2,7 @@
 
 **PRD**: `prds/leave-ride.md`
 **Context**: `.specs/features/leave-ride/context.md`
-**Status**: In Progress (2026-10-08)
+**Status**: Done (2026-10-08). Verifier PASS (`validation.md`)
 
 ## Problem Statement
 
@@ -136,27 +136,27 @@ Depois de confirmar presença ("Vou junto"), a passageira não tem como desistir
 
 | Requirement ID | Story | Phase | Status |
 | -------------- | ----- | ----- | ------ |
-| LEAVE-01 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
-| LEAVE-02 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
-| LEAVE-03 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
-| LEAVE-04 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
-| LEAVE-05 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
-| LEAVE-06 | P1: API remove inscrição com permissão | Execute | Implemented (T1, T2) |
-| LEAVE-07 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
-| LEAVE-08 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
-| LEAVE-09 | P1: API remove inscrição com permissão | Execute | Implemented (T2) |
-| LEAVE-10 | P1: Lista de passageiros recolhível | Execute | Implemented (T4, T7) |
-| LEAVE-11 | P1: Lista de passageiros recolhível | Execute | Implemented (T4) |
-| LEAVE-12 | P1: Lista de passageiros recolhível | Execute | Implemented (T4) |
-| LEAVE-13 | P1: Lista de passageiros recolhível | Execute | Implemented (T4, T7) |
-| LEAVE-14 | P1: Sair ou remover pela lista | Execute | Implemented (T4, T6) |
-| LEAVE-15 | P1: Sair ou remover pela lista | Execute | Implemented (T4, T6) |
-| LEAVE-16 | P1: Sair ou remover pela lista | Execute | Implemented (T4, T6) |
-| LEAVE-17 | P1: Sair ou remover pela lista | Execute | Implemented (T5, T7) |
-| LEAVE-18 | P1: Sair ou remover pela lista | Execute | Implemented (T5, T7) |
-| LEAVE-19 | P1: Sair ou remover pela lista | Execute | Implemented (T3, T5, T7) |
-| LEAVE-20 | P1: Sair ou remover pela lista | Execute | Implemented (T7) |
-| LEAVE-21 | P1: Sair ou remover pela lista | Execute | Implemented (T7) |
+| LEAVE-01 | P1: API remove inscrição com permissão | Execute | Verified (T1, T2) |
+| LEAVE-02 | P1: API remove inscrição com permissão | Execute | Verified (T1, T2) |
+| LEAVE-03 | P1: API remove inscrição com permissão | Execute | Verified (T2) |
+| LEAVE-04 | P1: API remove inscrição com permissão | Execute | Verified (T1, T2) |
+| LEAVE-05 | P1: API remove inscrição com permissão | Execute | Verified (T1, T2) |
+| LEAVE-06 | P1: API remove inscrição com permissão | Execute | Verified (T1, T2) |
+| LEAVE-07 | P1: API remove inscrição com permissão | Execute | Verified (T2) |
+| LEAVE-08 | P1: API remove inscrição com permissão | Execute | Verified (T2) |
+| LEAVE-09 | P1: API remove inscrição com permissão | Execute | Verified (T2) |
+| LEAVE-10 | P1: Lista de passageiros recolhível | Execute | Verified (T4, T7) |
+| LEAVE-11 | P1: Lista de passageiros recolhível | Execute | Verified (T4) |
+| LEAVE-12 | P1: Lista de passageiros recolhível | Execute | Verified (T4) |
+| LEAVE-13 | P1: Lista de passageiros recolhível | Execute | Verified (T4, T7) |
+| LEAVE-14 | P1: Sair ou remover pela lista | Execute | Verified (T4, T6) |
+| LEAVE-15 | P1: Sair ou remover pela lista | Execute | Verified (T4, T6) |
+| LEAVE-16 | P1: Sair ou remover pela lista | Execute | Verified (T4, T6) |
+| LEAVE-17 | P1: Sair ou remover pela lista | Execute | Verified (T5, T7) |
+| LEAVE-18 | P1: Sair ou remover pela lista | Execute | Verified (T5, T7) |
+| LEAVE-19 | P1: Sair ou remover pela lista | Execute | Verified (T3, T5, T7) |
+| LEAVE-20 | P1: Sair ou remover pela lista | Execute | Verified (T7) |
+| LEAVE-21 | P1: Sair ou remover pela lista | Execute | Verified (T7) |
 
 **Coverage:** 21 total, 21 mapped to tasks, 0 unmapped
 

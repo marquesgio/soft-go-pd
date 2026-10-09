@@ -53,12 +53,12 @@
 
 ## Handoff
 
-- **Feature**: leave-ride (`.specs/features/leave-ride/`) — em execução. delete-rides concluída (T1–T7, Verifier PASS)
-- **Phase / Task**: Execute: T1–T7 concluídas, Verifier em andamento
-- **Completed**: leave-ride T1–T7. API: 185 testes; front: 206 testes
+- **Feature**: leave-ride (`.specs/features/leave-ride/`) — **concluída**. delete-rides também concluída (T1–T7). auth, vou-junto, save-rideowner e revoke-token concluídas
+- **Phase / Task**: Execute concluído (T1–T7); Verifier PASS na iteração 1 (`validation.md`: 21/21 ACs, sensor 30/30)
+- **Completed**: delete-rides e leave-ride. API: 185 testes; front: 206 testes. Checagens manuais no banco local deixaram 5 contas de teste (`*.delete.<timestamp>@teste.com`, `*.leave.<timestamp>@teste.com`)
 - **In-progress** (file:line): none
-- **Next step**: T2 (`DELETE /ride-users/:rideId/users/:userId`). Depois: `prds/notify-ride-deleted.md` (cobre exclusão, saída e remoção)
+- **Next step**: Enviar ao GitHub quando a usuária autorizar (API `432a706`, front `d3ddb66`, raiz). Próximo card: `prds/notify-ride-deleted.md` (avisos de carona excluída, passageira que saiu e passageira removida)
 - **Blockers**: none
 - **Uncommitted files**: `soft-go-ii-api/tsconfig.build.tsbuildinfo` (não commitar); `prds/` na raiz (da usuária)
 - **Branch**: raiz `main`; API `master`; front `main`
-- **Deploy note**: Nada enviado ao GitHub desde revoke-token. Só código; sem migration
+- **Deploy note**: Só código; sem migration. API e front sobem juntos. Nada enviado ao GitHub desde revoke-token
