@@ -157,3 +157,66 @@ None.
 **Issues found**: none.
 
 **Next steps**: orchestrator updates `spec.md` traceability (DEL-01..16 → Verified) and commits it with the root bump.
+
+---
+
+## Addendum — T7 (lixeira ao lado do transporte)
+
+**Verdict**: PASS ✅
+**Date**: 2026-10-08
+**Scope**: DEL-08 (rewritten, `spec.md:78`) + DEL-09 regression (`spec.md:79`)
+**Diff range**: Front `soft-go-II` `3f74f33..44b4e9b` (1 commit: `44b4e9b` `feat: move ride delete action to trash icon beside transport type`), files `src/components/Card.tsx`, `src/components/Card.test.tsx`
+**Verifier**: independent sub-agent (author ≠ verifier)
+
+### Spec-Anchored Acceptance Criteria
+
+| Criterion | Spec-defined outcome | `file:line` + assertion | Result |
+| --------- | -------------------- | ----------------------- | ------ |
+| DEL-08 placement | trash icon immediately to the right of the transport-type badge | `src/components/Card.test.tsx:168` `expect(screen.getByText("Carro").nextElementSibling).toBe(button)`; impl `src/components/Card.tsx:76-91` (button is the next sibling of the badge `<span>`) | ✅ PASS |
+| DEL-08 accessible name | accessible name "Excluir carona" | `src/components/Card.test.tsx:161` `queryByRole("button", { name: "Excluir carona" })`; impl `src/components/Card.tsx:85` `aria-label="Excluir carona"` | ✅ PASS |
+| DEL-08 no visible text | icon only, no visible text | `src/components/Card.test.tsx:177` `expect(deleteButton()!.textContent).toBe("")`; impl `Card.tsx:89` only `<Trash2 aria-hidden>` | ✅ PASS |
+| DEL-08 actions row | actions row (WhatsApp, "Sua carona") has no delete button | `src/components/Card.test.tsx:179-181` `getByText("Sua carona").closest("div")!.querySelector("button")` `toBeNull()` (the closest `div` is the actions row, `Card.tsx:131`) | ✅ PASS |
+| DEL-08 click | click opens the delete flow | `src/components/Card.test.tsx:169-171` click → `onDeleteRide` `toHaveBeenCalledTimes(1)`; page level `src/pages/Home.test.tsx:266,281` `findByRole("button", { name: "Excluir carona" })` clicked → `:290` heading "Excluir carona?" | ✅ PASS |
+| DEL-08 edge (bus / full ride) | owner still gets the action | `src/components/Card.test.tsx:191`, `:201` `toBeInTheDocument()` | ✅ PASS |
+| DEL-09 | other account / logged out / `showButton={false}` → no button | `src/components/Card.test.tsx:207` (other user), `:213` (logged out), `:219` (`showButton={false}`) `not.toBeInTheDocument()`; `src/pages/Home.test.tsx:301` other account; `src/components/ConfirmDeleteRideModal.test.tsx:47` modal summary card has no "Excluir carona" button | ✅ PASS |
+
+**Status**: ✅ All ACs covered, 0 spec-precision gaps.
+
+### Discrimination Sensor
+
+Run in a temporary `git worktree` of `soft-go-II` at `44b4e9b` (scratch dir outside the repo, `node_modules` via junction), against `src/components/Card.test.tsx` + `src/pages/Home.test.tsx` (45 tests). Worktree and junction removed afterwards.
+
+| Mutation | File:line | Description | Killed? |
+| -------- | --------- | ----------- | ------- |
+| 1 | `src/components/Card.tsx:81-91` → `:149` | Icon moved back into the actions row (after "Sua carona") | ✅ Killed (2 failed) |
+| 2 | `src/components/Card.tsx:89` | Visible text "Excluir" added inside the button | ✅ Killed (1 failed) |
+| 3 | `src/components/Card.tsx:81` | `isOwner` dropped → shown to non-owners | ✅ Killed (3 failed) |
+| 4 | `src/components/Card.tsx:76` | Icon placed before the badge instead of after | ✅ Killed (1 failed) |
+| 5 | `src/components/Card.tsx:81` | `showButton` dropped → shown in the modal summary | ✅ Killed (1 failed) |
+| 6 | `src/components/Card.tsx:84` | `onClick={onDeleteRide}` removed | ✅ Killed (8 failed) |
+| 7 | `src/components/Card.tsx:149` | Icon rendered in both places (badge and actions row) | ✅ Killed (11 failed) |
+
+**Sensor depth**: lightweight (UI-only follow-up), 7 mutations.
+**Result**: 7/7 killed - PASS ✅
+**Isolation**: `soft-go-II` `git status --porcelain` identical before/after (clean). Root porcelain gained an untracked `.specs/features/leave-ride/` (spec/context/tasks, mtimes 23:00-23:01) written by a concurrent process during the run; the sensor only touched the out-of-repo scratch, so this is unrelated and was left untouched.
+
+### Code Quality
+
+| Principle | Status |
+| --------- | ------ |
+| Minimum code / surgical change (2 files, button moved, no new abstractions) | ✅ |
+| Matches patterns (icon button with `aria-label`, like the `Modal` "X"; Tailwind tokens `text-support-04`) | ✅ |
+| Tests map to DEL-08/DEL-09; the old "next to Sua carona" assertion was replaced, not weakened | ✅ |
+
+### Gate Check
+
+- **Gate command**: `cd soft-go-II && npm run lint && npm run build && npm test`
+- **Result**: lint 0 errors (1 pre-existing warning `src/pages/Home.tsx:48` react-hooks/exhaustive-deps, outside the diff); build OK (`tsc -b` + vite); **174 passed, 0 failed, 0 skipped**
+- **Test count**: 173 → 174 (+1: "a lixeira é só ícone…")
+
+### Traceability
+
+| Requirement | Previous Status | New Status |
+| ----------- | --------------- | ---------- |
+| DEL-08 | Implemented (T4, T6, T7) | ✅ Verified |
+| DEL-09 | Verified (T4) | ✅ Verified (unchanged after T7) |
